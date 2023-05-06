@@ -46,7 +46,7 @@ two_columns_layout: true
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://leesanghoon94.github.io/"
+url: "https://leesanghoon94.github.io"
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
 categories_folder: category
