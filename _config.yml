@@ -19,7 +19,7 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: isupperhoon@gmail.com
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
@@ -45,10 +45,10 @@ two_columns_layout: true
 
 
 # Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://leesanghoon94.github.io" # the subpath of your site, e.g. /blog
 url: "https://leesanghoon94.github.io"
 google_analytics: "UA-XXXXXXXX-X"
-language: "en"
+language: "kr"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
 
