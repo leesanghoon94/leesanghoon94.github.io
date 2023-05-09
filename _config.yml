@@ -5,6 +5,7 @@ description: Jekflix is a template for Jekyll inspired by Netflix and made by
   Thiago Rossener.
 tags:
   - blog
+  - til
   - template
   - jekyll
   - theme
@@ -13,12 +14,12 @@ show_hero: false
 menu:
   - title: Home
     url: /
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
+  # - title: About
+  #   url: /about
+  # - title: Contact
+  #   url: /contact
+  # - title: Feed
+  #   url: /feed.xml
 email: isupperhoon@gmail.com
 # See: https://disqus.com/
 disqus_username: sanghoonlee
