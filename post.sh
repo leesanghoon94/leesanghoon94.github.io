@@ -17,7 +17,7 @@ fi
 comments=$(osascript -e 'button returned of (display dialog "댓글을 허용하시겠습니까?" buttons {"true", "false"} default button 1)')
 
 # 블로그 포스트의 파일명을 생성합니다.
-filename="_posts/$(date +"%Y-%m-%d")-$(echo "$title" | tr " " -).md"
+filename="_posts/$(date +"%Y-%m-%d").md"
 
 # 블로그 포스트 파일을 생성하고 헤더 정보를 추가합니다.
 echo "---" > "$filename"
