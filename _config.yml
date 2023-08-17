@@ -1,5 +1,5 @@
 
-title: Catbook #Your awesome title
+title: github blog #Your awesome title
 email: #youremail@domain.com
 description: > # this means to ignore newlines until "baseurl"
   Write an awesome description for your new site here. You can edit this
@@ -20,7 +20,7 @@ cusdis:
     app_id: #your cusdis app_id
 
 user:
-  name: Catbook
+  name: sanghoon lee
   pic: /assets/img/cat.jpg
   picAlt: "catbook"
   job: a category-centric theme
