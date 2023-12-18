@@ -159,7 +159,8 @@ img {
 }
 
 .main {
-  max-width: 1200px;
+  max-width: 1200rem;
+  height: 900rem;
   padding: 0.5rem;
 
   @include breakpoint(medium) {
