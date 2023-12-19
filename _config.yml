@@ -200,3 +200,4 @@ jekyll_compose:
     posts:
       category:
       tags:
+      date: "%Y-%m-%d %H:%M:%S %z"
