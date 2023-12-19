@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My New Thing
-date:
+date: 2023-12-19 00:34:00 +0800
 category:
 tags:
 ---
