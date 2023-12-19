@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My New Thing
-date: "%Y-%m-%d %H:%M:%S %z"
+date:
 category:
 tags:
 ---
