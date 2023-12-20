@@ -1,11 +1,11 @@
 [
   
   {
-    "title": "jekyll-compose",
-    "url": "/posts/jekyll-compose/",
-    "categories": "",
-    "tags": "",
-    "date": "2023-12-19 19:49:00 +0900",
+    "title": "test",
+    "url": "/posts/test/",
+    "categories": "Monitoring, Sumo logic",
+    "tags": "Sumo Logic",
+    "date": "2023-09-23 12:11:11 +0900",
     
 
 
@@ -13,16 +13,16 @@
 
 
     
-    "snippet": "jekyll-compose",
-    "content": "jekyll-compose"
+    "snippet": "hahahahahaha",
+    "content": "hahahahahaha"
   },
   
   {
-    "title": "test",
-    "url": "/posts/test/",
-    "categories": "",
-    "tags": "test",
-    "date": "2023-12-19 01:34:00 +0900",
+    "title": "SaaS를 활용한 모니터링(Sumo Logic)#2",
+    "url": "/posts/SaaS-04/",
+    "categories": "Blogging, devops",
+    "tags": "Sumo Logic",
+    "date": "2023-09-22 12:11:11 +0900",
     
 
 
@@ -30,16 +30,50 @@
 
 
     
-    "snippet": "첫번째 포스팅1 SaaS를 활용한 모니터링(Datadog)#1오픈소스를 활용한 모니터링 콜렉터 에이전트를 직접 관리SaaS를 이용한 모니터링이란?사용자들은 별도의 관리 서버나 대시보드 없이 SaaS 솔루션의 Endpoint로 Agent를 통해 데이터를 전송만 하면 시각화  수집된 데이터이 보관주기를 지정해서 사용  대부분 host 당 요금제로 과금하는...",
-    "content": "첫번째 포스팅1 SaaS를 활용한 모니터링(Datadog)#1오픈소스를 활용한 모니터링 콜렉터 에이전트를 직접 관리SaaS를 이용한 모니터링이란?사용자들은 별도의 관리 서버나 대시보드 없이 SaaS 솔루션의 Endpoint로 Agent를 통해 데이터를 전송만 하면 시각화  수집된 데이터이 보관주기를 지정해서 사용  대부분 host 당 요금제로 과금하는 형태가 많음  최근 클라우드 환경에서 인프라와 어플리케이션, 로그 , DB를 종합적으로 볼 수 있는 솔루션으이 상용이 대세  전통적인 서버 관련 모니터링 뿐만 아니라 UX 까지 모니터링 할수 있음SaaS 모니터링 솔루션엔 뭐가 있을까?  Datadog  NewRelic  Dynatrace  Sumologic  Splunk  whatap(한국기업)Datadog서버, DB, 클라우드 서비스 등에 대한 다양한 모니터링을 제공하는 클라우드 모니터링 애플리케이션을 대표하는 SaaS  서버 상태, DB 쿼리 모니터링, 로그 모니터링  UX, CI, Security 영역까지 확대  다양한 CSP(AWS, Azure, GCP 등) 지원  Custom Metric과 다양한 형태의 Alert 지원(Infrastructure)네트워크나 Host, Container, Process 등 인프라와 관련된 모니터링 기능을 제공  integration을 통해 특정 CSP와 연동하면 host 정보를 수집하여 Map 형태로 나타낼 수 있음.  Serverless와 관련된 서비스에 대해서도 모니터링 가능(library import)  클라우드 비용에 대한 모니터링도 제공(APM) Application Performence Mornitoring어플리케이션에 특정 Library를 같이 올려서 어플리케이션에 대한 실행 메소드나 성능을 모니터링  실시간으로 서비스에 대한 요청, 응답시간, 메소드 실행 흐름 등을 모니터링  Log, RUM(Realtime User Mornitoring) ui쪽 모니터링,synthetic tests(api 모니터링)와 (APM)Trace를 연동하여 특정 시점에 대한 모니터링이 쉬움  Database monitoring 기능으로 사용하고 있는 DB의 Slow query, query plan 등모니터링 3-tier 아키텍처에서 병목지점을 빠르게 찾을 수 있음(Logs)Agent를 통해 어플리케이션의 Log를 수집해서 모니터링  단순 Log 모니터링부터 Log와 Trace를 엮어서 사용자에게 제공  이를 통해 서비스 장애 발생 시, 사용자는 해당 시점에 어떤 Log가 있었는지에 대해 분석하기가 쉬움  Observalbilty Pipelines을 제공해서 수집된 데이터들은 다른 모니터링 대상으로 정보를 가공할 수 있는 기능도 제공(UX)사용자 앞단에서 특정 API를 호출했을때, UI로부터 시작되는 로직의 모니터링이나 사용자의 행동에 따른 세션 등을 모니터링  Real Useer Monitoring을 통해 사용자가 어느 국가에서 들어왔는지, 혹은 어떤 페이지에 오래 머물렀는지 등 다양한 모니터링 지표를 js를 통해 수집  세션 리플레이 기능을 통해 UX를 고도화시킬 수 있음  다양한 테스트 기능 지원(Monitors)수집되는 데이터를 특정한 조건을 걸어 해당 조건이 된 경우, 알람을 발생시키는 기능  이를 활용해서 갑자기 값이 변하는 경우, 이상 징후 감지 기능을 할 수 있음  장애 발생 시, Incident에 대해 정리하기 용이  SLI를 정해서 SLO를 지키기 위해 모니터링 기능"
+    "snippet": "sumo logic integration과 AWS infrastructure monitoring사용자 AWS계정에 sumo logic에서 사용할 iam role 생성policy document{  \"Version\": \"2012-10-17\",  \"Statement\": [    {      \"Action\": [        \"cloudwatch:ListM...",
+    "content": "sumo logic integration과 AWS infrastructure monitoring사용자 AWS계정에 sumo logic에서 사용할 iam role 생성policy document{  \"Version\": \"2012-10-17\",  \"Statement\": [    {      \"Action\": [        \"cloudwatch:ListMetrics\",        \"cloudwatch:GetMetricStatistics\",        \"ec2:DescribeeInstance\",        \"tag:GetResource\"      ],      \"Effect\": \"Allow\",      \"Resource\": \"*\"    }  ]}sumo logic에서는 해당 iam role을 사용하여 지정된 서비스 metrics 수집sumo logic installed collectors와 application log monitoringdocker, ec2 환경(linux)에 installed collector 설치application의 log를 sumo logic으로 전달, 대시보드에서 조회"
+  },
+  
+  {
+    "title": "SaaS를 활용한 모니터링(Sumo Logic)#1",
+    "url": "/posts/SaaS-03/",
+    "categories": "Blogging, devops",
+    "tags": "Sumo Logic",
+    "date": "2023-09-21 12:11:11 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Sumo Logic클라우드 기반의 데이터 모니터링 및 분석 SaaS 플랫폼  인프라, 클라우드, 어플리케이션, 로그 및 CI/CD, 보안 모니터링 제공  SIM(Security Information Monitoring), SEM(Security Event Management)을 지원하는 SIEM(보안 정보 및 이벤트 관리) 솔루션 제공  다양한 CSP...",
+    "content": "Sumo Logic클라우드 기반의 데이터 모니터링 및 분석 SaaS 플랫폼  인프라, 클라우드, 어플리케이션, 로그 및 CI/CD, 보안 모니터링 제공  SIM(Security Information Monitoring), SEM(Security Event Management)을 지원하는 SIEM(보안 정보 및 이벤트 관리) 솔루션 제공  다양한 CSP(AWS, Azure, GCP등) 지원Sumo Logic Components  Installed Collectors          Agent 방식으로 Host의 Metric과 지정된 Path의 Log를 수집        Hosted Collectors          AWS, GCP, Azure 등 클라우드에 위치해 있으며 별다른 설치 없이 Role이나 Access key 기반으로 서비스 데이터를 수집하는 Collector      sumo logic data tier  continuous tier          실시간으로 모니터링 되어야 하는 데이터를 Continuous Tier로 지정      Application log, Security log, access log      대시보드, 모니터(알람) 지원        frequent tier          비교적 자주 검색하는 데이터를 Frequent Tier로 지정      개발 및 테스트 로그, 제품 분석 데이터 등      대시보드, 모니터(알람) 지원 하지 않음        infrequent tier          거의 조회하지 않는 데이터를 Infrequent tier로 지정                  간헐적이거나 재현하기 어려운 데이터 (디버그로그 ,os로그, 스레드 덤프)          Data Forwar, 대시보드, 모니터(알람) 지원 하지 않음                    "
+  },
+  
+  {
+    "title": "SaaS를 활용한 모니터링(Datadog)#2",
+    "url": "/posts/SaaS-02/",
+    "categories": "Blogging, devops",
+    "tags": "Datadog",
+    "date": "2023-09-20 13:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "SaaS를 활용한 모니터링(Datadog) #2구축방법Datadog integration AWS infrastructure monitoring  사용자 AWS 계정에 datadog에서 사용한 iam role 생성DatadogIntegretionRole{    \"Version\": \"2012-10-17\",    \"Statement\": [        \"E...",
+    "content": "SaaS를 활용한 모니터링(Datadog) #2구축방법Datadog integration AWS infrastructure monitoring  사용자 AWS 계정에 datadog에서 사용한 iam role 생성DatadogIntegretionRole{    \"Version\": \"2012-10-17\",    \"Statement\": [        \"Effect\": \"Allow\",        \"Principal\": {            \"AWS\": \"arn:aws:iam::&lt;my_id&gt;\"        },        \"Action\": \"sts:AssumRole\",        \"Condition\": {            \"StringEquals\": {                \"sts:ExternalId\": \"&lt;YOUR_AWS_EXTERNAL_ID Integrations&gt;\"            }        }    ]}권한{  \"Version\": \"2012-10-17\",  \"Statement\": [    {      \"Action\": [        \"apigateway:GET\",        \"autoscaling:Describe*\",        \"backup:List*\",        \"budgets:ViewBudget\",        \"cloudfront:GetDistributionConfig\",        \"cloudfront:ListDistributions\",        \"cloudtrail:DescribeTrails\",        \"cloudtrail:GetTrailStatus\",        \"cloudtrail:LookupEvents\",        \"cloudwatch:Describe*\",        \"cloudwatch:Get*\",        \"cloudwatch:List*\",        \"codedeploy:List*\",        \"codedeploy:BatchGet*\",        \"directconnect:Describe*\",        \"dynamodb:List*\",        \"dynamodb:Describe*\",        \"ec2:Describe*\",        \"ec2:GetTransitGatewayPrefixListReferences\",        \"ec2:SearchTransitGatewayRoutes\",        \"ecs:Describe*\",        \"ecs:List*\",        \"elasticache:Describe*\",        \"elasticache:List*\",        \"elasticfilesystem:DescribeFileSystems\",        \"elasticfilesystem:DescribeTags\",        \"elasticfilesystem:DescribeAccessPoints\",        \"elasticloadbalancing:Describe*\",        \"elasticmapreduce:List*\",        \"elasticmapreduce:Describe*\",        \"es:ListTags\",        \"es:ListDomainNames\",        \"es:DescribeElasticsearchDomains\",        \"events:CreateEventBus\",        \"fsx:DescribeFileSystems\",        \"fsx:ListTagsForResource\",        \"health:DescribeEvents\",        \"health:DescribeEventDetails\",        \"health:DescribeAffectedEntities\",        \"kinesis:List*\",        \"kinesis:Describe*\",        \"lambda:GetPolicy\",        \"lambda:List*\",        \"logs:DeleteSubscriptionFilter\",        \"logs:DescribeLogGroups\",        \"logs:DescribeLogStreams\",        \"logs:DescribeSubscriptionFilters\",        \"logs:FilterLogEvents\",        \"logs:PutSubscriptionFilter\",        \"logs:TestMetricFilter\",        \"organizations:Describe*\",        \"organizations:List*\",        \"rds:Describe*\",        \"rds:List*\",        \"redshift:DescribeClusters\",        \"redshift:DescribeLoggingStatus\",        \"route53:List*\",        \"s3:GetBucketLogging\",        \"s3:GetBucketLocation\",        \"s3:GetBucketNotification\",        \"s3:GetBucketTagging\",        \"s3:ListAllMyBuckets\",        \"s3:PutBucketNotification\",        \"ses:Get*\",        \"sns:List*\",        \"sns:Publish\",        \"sqs:ListQueues\",        \"states:ListStateMachines\",        \"states:DescribeStateMachine\",        \"support:DescribeTrustedAdvisor*\",        \"support:RefreshTrustedAdvisorCheck\",        \"tag:GetResources\",        \"tag:GetTagKeys\",        \"tag:GetTagValues\",        \"xray:BatchGetTraces\",        \"xray:GetTraceSummaries\"      ],      \"Effect\": \"Allow\",      \"Resource\": \"*\"    }  ]}  datadog에서는 해당 iam role을 사용하여 지정된 서비스 metrics 수집Datadog Agent를 활용한 Application Performance Monitoring"
   },
   
   {
     "title": "SaaS를 활용한 모니터링(Datadog)#1",
-    "url": "/posts/test/",
-    "categories": "test",
-    "tags": "",
-    "date": "2023-08-22 01:34:00 +0900",
+    "url": "/posts/SaaS-01/",
+    "categories": "Blogging, devops",
+    "tags": "Datadog",
+    "date": "2023-09-19 01:34:00 +0900",
     
 
 
@@ -47,8 +81,8 @@
 
 
     
-    "snippet": "1 SaaS를 활용한 모니터링(Datadog)#1오픈소스를 활용한 모니터링 콜렉터 에이전트를 직접 관리SaaS를 이용한 모니터링이란?사용자들은 별도의 관리 서버나 대시보드 없이 SaaS 솔루션의 Endpoint로 Agent를 통해 데이터를 전송만 하면 시각화  수집된 데이터이 보관주기를 지정해서 사용  대부분 host 당 요금제로 과금하는 형태가 많음...",
-    "content": "1 SaaS를 활용한 모니터링(Datadog)#1오픈소스를 활용한 모니터링 콜렉터 에이전트를 직접 관리SaaS를 이용한 모니터링이란?사용자들은 별도의 관리 서버나 대시보드 없이 SaaS 솔루션의 Endpoint로 Agent를 통해 데이터를 전송만 하면 시각화  수집된 데이터이 보관주기를 지정해서 사용  대부분 host 당 요금제로 과금하는 형태가 많음  최근 클라우드 환경에서 인프라와 어플리케이션, 로그 , DB를 종합적으로 볼 수 있는 솔루션으이 상용이 대세  전통적인 서버 관련 모니터링 뿐만 아니라 UX 까지 모니터링 할수 있음SaaS 모니터링 솔루션엔 뭐가 있을까?  Datadog  NewRelic  Dynatrace  Sumologic  Splunk  whatap(한국기업)Datadog서버, DB, 클라우드 서비스 등에 대한 다양한 모니터링을 제공하는 클라우드 모니터링 애플리케이션을 대표하는 SaaS  서버 상태, DB 쿼리 모니터링, 로그 모니터링  UX, CI, Security 영역까지 확대  다양한 CSP(AWS, Azure, GCP 등) 지원  Custom Metric과 다양한 형태의 Alert 지원(Infrastructure)네트워크나 Host, Container, Process 등 인프라와 관련된 모니터링 기능을 제공  integration을 통해 특정 CSP와 연동하면 host 정보를 수집하여 Map 형태로 나타낼 수 있음.  Serverless와 관련된 서비스에 대해서도 모니터링 가능(library import)  클라우드 비용에 대한 모니터링도 제공(APM) Application Performence Mornitoring어플리케이션에 특정 Library를 같이 올려서 어플리케이션에 대한 실행 메소드나 성능을 모니터링  실시간으로 서비스에 대한 요청, 응답시간, 메소드 실행 흐름 등을 모니터링  Log, RUM(Realtime User Mornitoring) ui쪽 모니터링,synthetic tests(api 모니터링)와 (APM)Trace를 연동하여 특정 시점에 대한 모니터링이 쉬움  Database monitoring 기능으로 사용하고 있는 DB의 Slow query, query plan 등모니터링 3-tier 아키텍처에서 병목지점을 빠르게 찾을 수 있음(Logs)Agent를 통해 어플리케이션의 Log를 수집해서 모니터링  단순 Log 모니터링부터 Log와 Trace를 엮어서 사용자에게 제공  이를 통해 서비스 장애 발생 시, 사용자는 해당 시점에 어떤 Log가 있었는지에 대해 분석하기가 쉬움  Observalbilty Pipelines을 제공해서 수집된 데이터들은 다른 모니터링 대상으로 정보를 가공할 수 있는 기능도 제공(UX)사용자 앞단에서 특정 API를 호출했을때, UI로부터 시작되는 로직의 모니터링이나 사용자의 행동에 따른 세션 등을 모니터링  Real Useer Monitoring을 통해 사용자가 어느 국가에서 들어왔는지, 혹은 어떤 페이지에 오래 머물렀는지 등 다양한 모니터링 지표를 js를 통해 수집  세션 리플레이 기능을 통해 UX를 고도화시킬 수 있음  다양한 테스트 기능 지원(Monitors)수집되는 데이터를 특정한 조건을 걸어 해당 조건이 된 경우, 알람을 발생시키는 기능  이를 활용해서 갑자기 값이 변하는 경우, 이상 징후 감지 기능을 할 수 있음  장애 발생 시, Incident에 대해 정리하기 용이  SLI를 정해서 SLO를 지키기 위해 모니터링 기능"
+    "snippet": "SaaS를 활용한 모니터링(Datadog)#1오픈소스를 활용한 모니터링 콜렉터 에이전트를 직접 관리SaaS를 이용한 모니터링이란?사용자들은 별도의 관리 서버나 대시보드 없이 SaaS 솔루션의 Endpoint로 Agent를 통해 데이터를 전송만 하면 시각화  수집된 데이터이 보관주기를 지정해서 사용  대부분 host 당 요금제로 과금하는 형태가 많음  ...",
+    "content": "SaaS를 활용한 모니터링(Datadog)#1오픈소스를 활용한 모니터링 콜렉터 에이전트를 직접 관리SaaS를 이용한 모니터링이란?사용자들은 별도의 관리 서버나 대시보드 없이 SaaS 솔루션의 Endpoint로 Agent를 통해 데이터를 전송만 하면 시각화  수집된 데이터이 보관주기를 지정해서 사용  대부분 host 당 요금제로 과금하는 형태가 많음  최근 클라우드 환경에서 인프라와 어플리케이션, 로그 , DB를 종합적으로 볼 수 있는 솔루션으이 상용이 대세  전통적인 서버 관련 모니터링 뿐만 아니라 UX 까지 모니터링 할수 있음SaaS 모니터링 솔루션엔 뭐가 있을까?  Datadog  NewRelic  Dynatrace  Sumologic  Splunk  whatap(한국기업)Datadog서버, DB, 클라우드 서비스 등에 대한 다양한 모니터링을 제공하는 클라우드 모니터링 애플리케이션을 대표하는 SaaS  서버 상태, DB 쿼리 모니터링, 로그 모니터링  UX, CI, Security 영역까지 확대  다양한 CSP(AWS, Azure, GCP 등) 지원  Custom Metric과 다양한 형태의 Alert 지원(Infrastructure)네트워크나 Host, Container, Process 등 인프라와 관련된 모니터링 기능을 제공  integration을 통해 특정 CSP와 연동하면 host 정보를 수집하여 Map 형태로 나타낼 수 있음.  Serverless와 관련된 서비스에 대해서도 모니터링 가능(library import)  클라우드 비용에 대한 모니터링도 제공(APM) Application Performence Mornitoring어플리케이션에 특정 Library를 같이 올려서 어플리케이션에 대한 실행 메소드나 성능을 모니터링  실시간으로 서비스에 대한 요청, 응답시간, 메소드 실행 흐름 등을 모니터링  Log, RUM(Realtime User Mornitoring) ui쪽 모니터링,synthetic tests(api 모니터링)와 (APM)Trace를 연동하여 특정 시점에 대한 모니터링이 쉬움  Database monitoring 기능으로 사용하고 있는 DB의 Slow query, query plan 등모니터링 3-tier 아키텍처에서 병목지점을 빠르게 찾을 수 있음(Logs)Agent를 통해 어플리케이션의 Log를 수집해서 모니터링  단순 Log 모니터링부터 Log와 Trace를 엮어서 사용자에게 제공  이를 통해 서비스 장애 발생 시, 사용자는 해당 시점에 어떤 Log가 있었는지에 대해 분석하기가 쉬움  Observalbilty Pipelines을 제공해서 수집된 데이터들은 다른 모니터링 대상으로 정보를 가공할 수 있는 기능도 제공(UX)사용자 앞단에서 특정 API를 호출했을때, UI로부터 시작되는 로직의 모니터링이나 사용자의 행동에 따른 세션 등을 모니터링  Real Useer Monitoring을 통해 사용자가 어느 국가에서 들어왔는지, 혹은 어떤 페이지에 오래 머물렀는지 등 다양한 모니터링 지표를 js를 통해 수집  세션 리플레이 기능을 통해 UX를 고도화시킬 수 있음  다양한 테스트 기능 지원(Monitors)수집되는 데이터를 특정한 조건을 걸어 해당 조건이 된 경우, 알람을 발생시키는 기능  이를 활용해서 갑자기 값이 변하는 경우, 이상 징후 감지 기능을 할 수 있음  장애 발생 시, Incident에 대해 정리하기 용이  SLI를 정해서 SLO를 지키기 위해 모니터링 기능"
   },
   
   {

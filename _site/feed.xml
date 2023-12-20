@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>LSH</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-19T21:58:28+09:00</updated>
+  <updated>2023-12-20T20:04:01+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -20,44 +20,11 @@
 
   
   <entry>
-    <title>jekyll-compose</title>
-    <link href="http://localhost:4000/posts/jekyll-compose/" rel="alternate" type="text/html" title="jekyll-compose" />
-    <published>2023-12-19T19:49:00+09:00</published>
-  
-    <updated>2023-12-19T19:49:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/jekyll-compose/</id>
-    <content src="http://localhost:4000/posts/jekyll-compose/" />
-    <author>
-      <name>your_full_name</name>
-    </author>
-
-  
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      jekyll-compose
-
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
     <title>test</title>
     <link href="http://localhost:4000/posts/test/" rel="alternate" type="text/html" title="test" />
-    <published>2023-12-19T01:34:00+09:00</published>
+    <published>2023-09-23T12:11:11+09:00</published>
   
-    <updated>2023-12-19T17:57:53+09:00</updated>
+    <updated>2023-09-23T12:11:11+09:00</updated>
   
     <id>http://localhost:4000/posts/test/</id>
     <content src="http://localhost:4000/posts/test/" />
@@ -67,6 +34,10 @@
 
   
     
+    <category term="Monitoring" />
+    
+    <category term="Sumo logic" />
+    
   
 
   
@@ -77,29 +48,179 @@
 
 
 
-      첫번째 포스팅
+      hahahahahaha
 
-1 SaaS를 활용한 모니터링(Datadog)#1
+    </summary>
+  
 
-오픈소스를 활용한 모니터링 콜렉터 에이전트를 직접 관리
-SaaS를 이용한 모니터링이란?
-사용자들은 별도의 관리 서버나 대시보드 없이 SaaS 솔루션의 Endpoint로 Agent를 통해 데이터를 전송만 하면 시각화
+  </entry>
+
+  
+  <entry>
+    <title>SaaS를 활용한 모니터링(Sumo Logic)#2</title>
+    <link href="http://localhost:4000/posts/SaaS-04/" rel="alternate" type="text/html" title="SaaS를 활용한 모니터링(Sumo Logic)#2" />
+    <published>2023-09-22T12:11:11+09:00</published>
+  
+    <updated>2023-12-20T05:47:11+09:00</updated>
+  
+    <id>http://localhost:4000/posts/SaaS-04/</id>
+    <content src="http://localhost:4000/posts/SaaS-04/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="devops" />
+    
+  
+
+  
+    <summary>
+      
 
 
-  수집된 데이터이 보관주기를 지정해서 사용
-  대부분 host 당 요금제로 과금하는 형태가 많음
-  최근 클라우드 환경에서 인프라와 어플리케이션, 로그 , DB를 종합적으로 볼 수 있는 솔루션으이 상용이 대세
-  전통적인 서버 관련 모니터링 뿐만 아니라 UX 까지 모니터링 할수 있음
 
 
-SaaS 모니터링 솔루션엔 뭐가 있을까?
+
+      sumo logic integration과 AWS infrastructure monitoring
+
+사용자 AWS계정에 sumo logic에서 사용할 iam role 생성
+
+policy document
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "cloudwatch:ListMetrics",
+        "cloudwatch:GetMetricStatistics",
+        "ec2:DescribeeInstance",
+        "tag:GetResource"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
 
 
-  Datadog
-  NewRelic
-  Dynatrace
-  Sumologic
-  Spl...
+sumo logi...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>SaaS를 활용한 모니터링(Sumo Logic)#1</title>
+    <link href="http://localhost:4000/posts/SaaS-03/" rel="alternate" type="text/html" title="SaaS를 활용한 모니터링(Sumo Logic)#1" />
+    <published>2023-09-21T12:11:11+09:00</published>
+  
+    <updated>2023-12-20T05:47:11+09:00</updated>
+  
+    <id>http://localhost:4000/posts/SaaS-03/</id>
+    <content src="http://localhost:4000/posts/SaaS-03/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="devops" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Sumo Logic
+
+클라우드 기반의 데이터 모니터링 및 분석 SaaS 플랫폼
+
+
+  인프라, 클라우드, 어플리케이션, 로그 및 CI/CD, 보안 모니터링 제공
+  SIM(Security Information Monitoring), SEM(Security Event Management)을 지원하는 SIEM(보안 정보 및 이벤트 관리) 솔루션 제공
+  다양한 CSP(AWS, Azure, GCP등) 지원
+
+
+Sumo Logic Components
+
+
+  Installed Collectors
+    
+      Agent 방식으로 Host의 Metric과 지정된 Path의 Log를 수집
+    
+  
+  Hosted Collectors
+    
+      AWS, GCP, Azure 등 클라우드에 위치해 있...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>SaaS를 활용한 모니터링(Datadog)#2</title>
+    <link href="http://localhost:4000/posts/SaaS-02/" rel="alternate" type="text/html" title="SaaS를 활용한 모니터링(Datadog)#2" />
+    <published>2023-09-20T13:00:00+09:00</published>
+  
+    <updated>2023-12-20T05:47:11+09:00</updated>
+  
+    <id>http://localhost:4000/posts/SaaS-02/</id>
+    <content src="http://localhost:4000/posts/SaaS-02/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="devops" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      SaaS를 활용한 모니터링(Datadog) #2
+
+구축방법
+
+Datadog integration AWS infrastructure monitoring
+
+
+  사용자 AWS 계정에 datadog에서 사용한 iam role 생성
+DatadogIntegretionRole
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        "Effect": "Allow",
+        "Principal": {
+            "AWS": "arn:aws:iam::&amp;lt;my_id&amp;gt;"
+        },
+        "Action": "sts:AssumRole",
+        "Condition": {
+            "StringEquals": {...
     </summary>
   
 
@@ -108,20 +229,22 @@ SaaS 모니터링 솔루션엔 뭐가 있을까?
   
   <entry>
     <title>SaaS를 활용한 모니터링(Datadog)#1</title>
-    <link href="http://localhost:4000/posts/test/" rel="alternate" type="text/html" title="SaaS를 활용한 모니터링(Datadog)#1" />
-    <published>2023-08-22T01:34:00+09:00</published>
+    <link href="http://localhost:4000/posts/SaaS-01/" rel="alternate" type="text/html" title="SaaS를 활용한 모니터링(Datadog)#1" />
+    <published>2023-09-19T01:34:00+09:00</published>
   
-    <updated>2023-12-19T19:50:17+09:00</updated>
+    <updated>2023-12-20T05:47:11+09:00</updated>
   
-    <id>http://localhost:4000/posts/test/</id>
-    <content src="http://localhost:4000/posts/test/" />
+    <id>http://localhost:4000/posts/SaaS-01/</id>
+    <content src="http://localhost:4000/posts/SaaS-01/" />
     <author>
       <name>your_full_name</name>
     </author>
 
   
     
-    <category term="test" />
+    <category term="Blogging" />
+    
+    <category term="devops" />
     
   
 
@@ -133,7 +256,7 @@ SaaS 모니터링 솔루션엔 뭐가 있을까?
 
 
 
-      1 SaaS를 활용한 모니터링(Datadog)#1
+      SaaS를 활용한 모니터링(Datadog)#1
 
 오픈소스를 활용한 모니터링 콜렉터 에이전트를 직접 관리
 SaaS를 이용한 모니터링이란?
@@ -154,95 +277,7 @@ SaaS 모니터링 솔루션엔 뭐가 있을까?
   Dynatrace
   Sumologic
   Splunk
-  wha...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Customize the Favicon</title>
-    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T01:34:00+09:00</published>
-  
-    <updated>2023-12-19T08:38:09+09:00</updated>
-  
-    <id>http://localhost:4000/posts/customize-the-favicon/</id>
-    <content src="http://localhost:4000/posts/customize-the-favicon/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
-
-Generate the favicon
-
-Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Getting Started</title>
-    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T21:55:00+09:00</published>
-  
-    <updated>2023-12-19T08:38:09+09:00</updated>
-  
-    <id>http://localhost:4000/posts/getting-started/</id>
-    <content src="http://localhost:4000/posts/getting-started/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Prerequisites
-
-Follow the instructions in the Jekyll Docs to complete the installation of the basic environment. Git also needs to be installed.
-
-Installation
-
-Creating a New Site
-
-There are two ways to create a new repository for this theme:
-
-
-  Using the Chirpy Starter - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
-  GitHub Fork - Convenient for custom devel...
+  whata...
     </summary>
   
 

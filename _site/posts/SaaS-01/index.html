@@ -35,25 +35,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="jekyll-compose" />
+<meta property="og:title" content="SaaS를 활용한 모니터링(Datadog)#1" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="jekyll-compose" />
-<meta property="og:description" content="jekyll-compose" />
-<link rel="canonical" href="http://localhost:4000/posts/jekyll-compose/" />
-<meta property="og:url" content="http://localhost:4000/posts/jekyll-compose/" />
+<meta name="description" content="SaaS를 활용한 모니터링(Datadog)#1" />
+<meta property="og:description" content="SaaS를 활용한 모니터링(Datadog)#1" />
+<link rel="canonical" href="http://localhost:4000/posts/SaaS-01/" />
+<meta property="og:url" content="http://localhost:4000/posts/SaaS-01/" />
 <meta property="og:site_name" content="LSH" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-12-19T19:49:00+09:00" />
+<meta property="article:published_time" content="2023-09-19T01:34:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="jekyll-compose" />
+<meta property="twitter:title" content="SaaS를 활용한 모니터링(Datadog)#1" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-19T19:49:00+09:00","datePublished":"2023-12-19T19:49:00+09:00","description":"jekyll-compose","headline":"jekyll-compose","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/jekyll-compose/"},"url":"http://localhost:4000/posts/jekyll-compose/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-20T05:47:11+09:00","datePublished":"2023-09-19T01:34:00+09:00","description":"SaaS를 활용한 모니터링(Datadog)#1","headline":"SaaS를 활용한 모니터링(Datadog)#1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SaaS-01/"},"url":"http://localhost:4000/posts/SaaS-01/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>jekyll-compose | LSH
+  <title>SaaS를 활용한 모니터링(Datadog)#1 | LSH
   </title>
 
   <!--
@@ -279,7 +279,7 @@
     <a href="/" id="avatar" class="rounded-circle">
       
         
-        <img src="https://chirpy-img.netlify.app.assets/img/avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+        <img src="/assets/img/1.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
       
     </a>
 
@@ -471,7 +471,7 @@
         
           
             
-              <span>jekyll-compose</span>
+              <span>SaaS를 활용한 모니터링(Datadog)#1</span>
             
 
           
@@ -580,7 +580,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>jekyll-compose</h1>
+    <h1 data-toc-skip>SaaS를 활용한 모니터링(Datadog)#1</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -596,18 +596,41 @@
 
 <time
   
-  data-ts="1702982940"
+  data-ts="1695054840"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Dec 19, 2023
+  Sep 19, 2023
 </time>
 
       </span>
 
       <!-- lastmod date -->
+      
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1703018831"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Dec 20, 2023
+</time>
+
+        </span>
       
 
       
@@ -647,9 +670,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1 words"
+  title="932 words"
 >
-  <em>1 min</em> read</span>
+  <em>5 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -658,15 +681,107 @@
   </header>
 
   <div class="content">
-    <h1 id="jekyll-compose">jekyll-compose</h1>
+    <p>SaaS를 활용한 모니터링(Datadog)#1</p>
+
+<p>오픈소스를 활용한 모니터링 콜렉터 에이전트를 직접 관리
+SaaS를 이용한 모니터링이란?
+사용자들은 별도의 관리 서버나 대시보드 없이 SaaS 솔루션의 Endpoint로 Agent를 통해 데이터를 전송만 하면 시각화</p>
+
+<ul>
+  <li>수집된 데이터이 보관주기를 지정해서 사용</li>
+  <li>대부분 host 당 요금제로 과금하는 형태가 많음</li>
+  <li>최근 클라우드 환경에서 인프라와 어플리케이션, 로그 , DB를 종합적으로 볼 수 있는 솔루션으이 상용이 대세</li>
+  <li>전통적인 서버 관련 모니터링 뿐만 아니라 UX 까지 모니터링 할수 있음</li>
+</ul>
+
+<p>SaaS 모니터링 솔루션엔 뭐가 있을까?</p>
+
+<ul>
+  <li>Datadog</li>
+  <li>NewRelic</li>
+  <li>Dynatrace</li>
+  <li>Sumologic</li>
+  <li>Splunk</li>
+  <li>whatap(한국기업)</li>
+</ul>
+
+<p>Datadog
+서버, DB, 클라우드 서비스 등에 대한 다양한 모니터링을 제공하는 클라우드 모니터링 애플리케이션을 대표하는 SaaS</p>
+
+<ul>
+  <li>서버 상태, DB 쿼리 모니터링, 로그 모니터링</li>
+  <li>UX, CI, Security 영역까지 확대</li>
+  <li>다양한 CSP(AWS, Azure, GCP 등) 지원</li>
+  <li>Custom Metric과 다양한 형태의 Alert 지원</li>
+</ul>
+
+<p>(Infrastructure)
+네트워크나 Host, Container, Process 등 인프라와 관련된 모니터링 기능을 제공</p>
+
+<ul>
+  <li>integration을 통해 특정 CSP와 연동하면 host 정보를 수집하여 Map 형태로 나타낼 수 있음.</li>
+  <li>Serverless와 관련된 서비스에 대해서도 모니터링 가능(library import)</li>
+  <li>클라우드 비용에 대한 모니터링도 제공
+(APM) Application Performence Mornitoring
+어플리케이션에 특정 Library를 같이 올려서 어플리케이션에 대한 실행 메소드나 성능을 모니터링</li>
+  <li>실시간으로 서비스에 대한 요청, 응답시간, 메소드 실행 흐름 등을 모니터링</li>
+  <li>Log, RUM(Realtime User Mornitoring) ui쪽 모니터링,
+synthetic tests(api 모니터링)와 (APM)Trace를 연동하여 특정 시점에 대한 모니터링이 쉬움</li>
+  <li>Database monitoring 기능으로 사용하고 있는 DB의 Slow query, query plan 등
+모니터링 3-tier 아키텍처에서 병목지점을 빠르게 찾을 수 있음</li>
+</ul>
+
+<p>(Logs)
+Agent를 통해 어플리케이션의 Log를 수집해서 모니터링</p>
+
+<ul>
+  <li>단순 Log 모니터링부터 Log와 Trace를 엮어서 사용자에게 제공</li>
+  <li>이를 통해 서비스 장애 발생 시, 사용자는 해당 시점에 어떤 Log가 있었는지에 대해 분석하기가 쉬움</li>
+  <li>Observalbilty Pipelines을 제공해서 수집된 데이터들은 다른 모니터링 대상으로 정보를 가공할 수 있는 기능도 제공</li>
+</ul>
+
+<p>(UX)
+사용자 앞단에서 특정 API를 호출했을때, UI로부터 시작되는 로직의 모니터링이나 사용자의 행동에 따른 세션 등을 모니터링</p>
+
+<ul>
+  <li>Real Useer Monitoring을 통해 사용자가 어느 국가에서 들어왔는지, 혹은 어떤 페이지에 오래 머물렀는지 등 다양한 모니터링 지표를 js를 통해 수집</li>
+  <li>세션 리플레이 기능을 통해 UX를 고도화시킬 수 있음</li>
+  <li>다양한 테스트 기능 지원</li>
+</ul>
+
+<p>(Monitors)
+수집되는 데이터를 특정한 조건을 걸어 해당 조건이 된 경우, 알람을 발생시키는 기능</p>
+
+<ul>
+  <li>이를 활용해서 갑자기 값이 변하는 경우, 이상 징후 감지 기능을 할 수 있음</li>
+  <li>장애 발생 시, Incident에 대해 정리하기 용이</li>
+  <li>SLI를 정해서 SLO를 지키기 위해 모니터링 기능</li>
+</ul>
 
   </div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/blogging/">Blogging</a>,
+          <a href="/categories/devops/">devops</a>
+      </div>
+    
 
     <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/datadog/"
+            class="post-tag no-text-decoration"
+          >Datadog</a>
+        
+      </div>
     
 
     <div
@@ -700,21 +815,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=jekyll-compose%20-%20LSH&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fjekyll-compose%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=SaaS%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81(Datadog)#1%20-%20LSH&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FSaaS-01%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=jekyll-compose%20-%20LSH&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fjekyll-compose%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=SaaS%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81(Datadog)#1%20-%20LSH&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FSaaS-01%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fjekyll-compose%2F&text=jekyll-compose%20-%20LSH" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FSaaS-01%2F&text=SaaS%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81(Datadog)#1%20-%20LSH" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -769,14 +884,28 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/test/">SaaS를 활용한 모니터링(Datadog)#1</a>
+          <a href="/posts/SaaS-01/">SaaS를 활용한 모니터링(Datadog)#1</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/test/">test</a>
+          <a href="/posts/SaaS-02/">SaaS를 활용한 모니터링(Datadog)#2</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SaaS-03/">SaaS를 활용한 모니터링(Sumo Logic)#1</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SaaS-04/">SaaS를 활용한 모니터링(Sumo Logic)#2</a>
         </li>
       
         
@@ -784,20 +913,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/text-and-typography/">Text and Typography</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/write-a-new-post/">Writing a New Post</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/getting-started/">Getting Started</a>
         </li>
       
     </ul>
@@ -826,39 +941,15 @@
     
     
     
-      
-        
-        
-
   
     
     
     
     
-      
-    
   
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -875,6 +966,13 @@
     
     
       
+        
+        
+
+  
+    
+    
+    
     
   
     
@@ -882,6 +980,13 @@
     
     
       
+        
+        
+
+  
+    
+    
+    
     
   
     
@@ -904,7 +1009,38 @@
     
     
     
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
     
   
     
@@ -919,6 +1055,11 @@
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -943,13 +1084,16 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/sumo-logic/">Sumo Logic</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/datadog/">Datadog</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/test/">test</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
@@ -1002,6 +1146,93 @@
 
 
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -1011,6 +1242,181 @@
 
 
 
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/SaaS-02/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1695182400"
+  data-df="ll"
+  
+>
+  Sep 20, 2023
+</time>
+
+              <h4 class="pt-0 my-2">SaaS를 활용한 모니터링(Datadog)#2</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  SaaS를 활용한 모니터링(Datadog) #2
+
+구축방법
+
+Datadog integration AWS infrastructure monitoring
+
+
+  사용자 AWS 계정에 datadog에서 사용한 iam role 생성
+DatadogIntegretionRole
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+{
+    &quot;Ver...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/SaaS-03/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1695265871"
+  data-df="ll"
+  
+>
+  Sep 21, 2023
+</time>
+
+              <h4 class="pt-0 my-2">SaaS를 활용한 모니터링(Sumo Logic)#1</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Sumo Logic
+
+클라우드 기반의 데이터 모니터링 및 분석 SaaS 플랫폼
+
+
+  인프라, 클라우드, 어플리케이션, 로그 및 CI/CD, 보안 모니터링 제공
+  SIM(Security Information Monitoring), SEM(Security Event Management)을 지원하는 SIEM(보안 정보 및 이벤트 관리) 솔루션 제공
+  ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/SaaS-04/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1695352271"
+  data-df="ll"
+  
+>
+  Sep 22, 2023
+</time>
+
+              <h4 class="pt-0 my-2">SaaS를 활용한 모니터링(Sumo Logic)#2</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  sumo logic integration과 AWS infrastructure monitoring
+
+사용자 AWS계정에 sumo logic에서 사용할 iam role 생성
+
+policy document
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+{
+  &quot;Version&quot;: &quot;2012-10-17&quot;,
+  &quot;Statement&quot;: [
+  ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1023,24 +1429,81 @@
 
   
     <a
-      href="/posts/test/"
+      href="/posts/customize-the-favicon/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>test</p>
+      <p>Customize the Favicon</p>
     </a>
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/SaaS-02/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>SaaS를 활용한 모니터링(Datadog)#2</p>
+    </a>
   
 </nav>
 
             
               
               <!--  The comments switcher -->
+
+  
+  <!-- The Disqus lazy loading. -->
+
+<div id="disqus_thread">
+  <p class="text-center text-muted small">Comments powered by <a href="https://disqus.com/">Disqus</a>.</p>
+</div>
+
+<script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = 'http://localhost:4000/posts/SaaS-01/';
+    this.page.identifier = '/posts/SaaS-01/';
+  };
+
+  /* Lazy loading */
+  var disqus_observer = new IntersectionObserver(
+    function (entries) {
+      if (entries[0].isIntersecting) {
+        (function () {
+          var d = document,
+            s = d.createElement('script');
+          s.src = 'https://leesanghoon94-github-io.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+
+        disqus_observer.disconnect();
+      }
+    },
+    { threshold: [0] }
+  );
+
+  disqus_observer.observe(document.querySelector('#disqus_thread'));
+
+  /* Auto switch theme */
+  function reloadDisqus() {
+    if (event.source === window && event.data && event.data.direction === ModeToggle.ID) {
+      /* Disqus hasn't been loaded */
+      if (typeof DISQUS === 'undefined') {
+        return;
+      }
+
+      if (document.readyState == 'complete') {
+        DISQUS.reset({ reload: true, config: disqus_config });
+      }
+    }
+  }
+
+  if (document.querySelector('.mode-toggle')) {
+    window.addEventListener('message', reloadDisqus);
+  }
+</script>
+
 
 
             
@@ -1100,39 +1563,15 @@
     
     
     
-      
-        
-        
-
   
     
     
     
     
-      
-    
   
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1149,6 +1588,13 @@
     
     
       
+        
+        
+
+  
+    
+    
+    
     
   
     
@@ -1156,6 +1602,13 @@
     
     
       
+        
+        
+
+  
+    
+    
+    
     
   
     
@@ -1178,7 +1631,38 @@
     
     
     
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
     
   
     
@@ -1193,6 +1677,11 @@
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -1217,13 +1706,16 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/sumo-logic/">Sumo Logic</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/datadog/">Datadog</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/test/">test</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
