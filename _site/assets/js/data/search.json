@@ -1,11 +1,11 @@
 [
   
   {
-    "title": "test",
-    "url": "/posts/test/",
-    "categories": "Monitoring, Sumo logic",
-    "tags": "Sumo Logic",
-    "date": "2023-09-23 12:11:11 +0900",
+    "title": "클라우드 서비스",
+    "url": "/posts/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%98-%ED%8A%B9%EC%A7%95/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-11-02 12:11:11 +0900",
     
 
 
@@ -13,8 +13,467 @@
 
 
     
-    "snippet": "hahahahahaha",
-    "content": "hahahahahaha"
+    "snippet": "클라우드 컴퓨팅의 유형• 퍼블릭(Public ) 클라우드사용자는 컴퓨팅 리소스를 “소유 하지 않음” 인터넷을 통해 제공 가상화기술로만든서비스를그대로사용• 프라이빗(Private) 클라우드특정 조직내에서 컴퓨팅 리소스를 “소유” 사설(Private)네트워크를 통해 제공 • 가상컴퓨팅기술을직접구축            유형      설명           ...",
+    "content": "클라우드 컴퓨팅의 유형• 퍼블릭(Public ) 클라우드사용자는 컴퓨팅 리소스를 “소유 하지 않음” 인터넷을 통해 제공 가상화기술로만든서비스를그대로사용• 프라이빗(Private) 클라우드특정 조직내에서 컴퓨팅 리소스를 “소유” 사설(Private)네트워크를 통해 제공 • 가상컴퓨팅기술을직접구축            유형      설명                  퍼블릭(Public) 클라우드      사용자는 컴퓨팅 리소스를 “소유 하지 않음” 인터넷을 통해 제공              프라이빗(Private) 클라우드      특정 조직내에서 컴퓨팅 리소스를 “소유” 프라이빗 네트워크를 통해 제공              하이브리드(Hybrid) 클라우드      퍼블릭 클라우드와 프라이빗 클라우드 또는 데이터센터 간 네트워크를 연결 데이터 및 애플리케이션을 공유              멀티(Multi) 클라우드      다수의 퍼블릭 클라우드를 사용 e.g. AWS + GCP + Azure      클라우드 서비스 제공업체 (CSP, Cloud Service Provider)| 국내 | 해외 || :——-: | :——-: || naver | aws || hnh cloud | azure || kt cloud | ibm cloud || gabia | oracle || kakao | alibaba || | tencent |탄력성/민첩성 리소스에 대해 필요할 때 언제든 늘리고, 줄일 수 있음확장성 물리 서버를 확장하려면 시간이 오래 걸리는 반면, 클라우드는 즉시 확장이 가능사용한 만큼 지불 전기 요금처럼 사용 한 만큼 과금 되며, 비용 예측이 가능고 가용성 유지 관리 간소화내결함성 및 재해복구 클라우드 백업 및 클라우드 DR 구성으로 데이터 손상 등 긴급 상황에 대처 가능고가용성 손쉬운 다중 가용영역 설정에 따라 고 가용성을 보장유지 관리 간소화 물리적인 리소스를 유지할 필요가 없고, 부분적으로 클라우드 CSP벤더에 위임클라우드 서비스 모델 (IaaS/PaaS/SaaS)기존 인프라와의 차이점            항목      On-Premise      Cloud                  인프라 운영/보안      사용자가 모두 운영하고 관리      공동 책임 모델이 적용              구축 및 배포      자원 구축/배포 시간이 길다      단 시간에 인프라 구성이 가능              탄력성/확장성      서버증설시예산및시간이소요      몇번의 클릭으로 서버 증설 가능              비용지출 방식      자본 지출 : Capital Expense(CAPEX)      운영 지출 : Operation Expense(OPEX)              네트워크 트래픽      인터넷 공급자(ISP) 회선 계약 따라 회선속도 및 트래픽 용량을 사전에 설정      회선속도나용량을정할수없음 트래픽을 사용한만큼 지출 (outbound)              오픈소스      모든 오픈소스 Application을 스스로 구축      Pre-built 된 오픈소스 Application을 즉시 사용      "
+  },
+  
+  {
+    "title": "multer를 사용해 이미지 업로드하기",
+    "url": "/posts/multer/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-11-01 12:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "multer를 사용해 이미지 업로드하기사용자가 보낸 파일데이터를 노드 익스프레스 서버에서 처리해서 특정한 폴더에 업로드하고 사용하에게 보여주기위해서Multer는 파일 업로드를 위해 사용되는 multipart/form-data 를 다루기 위한 node.js 의 미들웨어 입니다. 효율성을 최대화 하기 위해 busboy 를 기반으로 하고 있습니다.주: Mu...",
+    "content": "multer를 사용해 이미지 업로드하기사용자가 보낸 파일데이터를 노드 익스프레스 서버에서 처리해서 특정한 폴더에 업로드하고 사용하에게 보여주기위해서Multer는 파일 업로드를 위해 사용되는 multipart/form-data 를 다루기 위한 node.js 의 미들웨어 입니다. 효율성을 최대화 하기 위해 busboy 를 기반으로 하고 있습니다.주: Multer는 multipart (multipart/form-data)가 아닌 폼에서는 동작하지 않습니다.multer 객체를 만들어주고업로드를 설정해준다업로드폴더를 사용자가 실제로 접근해야하기 위해 스태틱을 해준다aws s3에"
+  },
+  
+  {
+    "title": "ER_NOT_SUPPORTED_AUTH_MODE",
+    "url": "/posts/mysql-error/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-20 13:12:12 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "ER_NOT_SUPPORTED_AUTH_MODE‘Client does not support authentication protocol requested by server; consider upgrading MySQL client’,mysql의 default_authentication_plugin은 mysql_native_password였다하지만 mys...",
+    "content": "ER_NOT_SUPPORTED_AUTH_MODE‘Client does not support authentication protocol requested by server; consider upgrading MySQL client’,mysql의 default_authentication_plugin은 mysql_native_password였다하지만 mysql 8 부터 보안이 강화된 caching_sha2_password로 변경되면서mysql 모듈이cha2 방식을 지원하지 못해 node.js에서 db 연동이 안되었다.###      caching_sha2_password 방식을 지원하는 mysql2 모듈을 사용한다        default_authentication_plugin(기본 인증 플러그인)을 mysql_native_password으로 다운그레이드 한다.  플러그인을 바꿔 준다"
+  },
+  
+  {
+    "title": "Cidr",
+    "url": "/posts/cidr/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-10-19 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "#",
+    "content": "#"
+  },
+  
+  {
+    "title": "TypeError Cannot read properties of null (reading 'addEventListener')",
+    "url": "/posts/2023-10-17/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-10-17 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "TypeError: Cannot read properties of null (reading ‘addEventListener’)에러 원인  script를 body의 상단에 작성하게 되면, 간혹 html이 로드 되기 전에 script를 먼저 불러와버리는 경우가 생긴다.  addEventListener을 부여할 DOM을 찾지 못하게 되어 에러가 발생해결 방...",
+    "content": "TypeError: Cannot read properties of null (reading ‘addEventListener’)에러 원인  script를 body의 상단에 작성하게 되면, 간혹 html이 로드 되기 전에 script를 먼저 불러와버리는 경우가 생긴다.  addEventListener을 부여할 DOM을 찾지 못하게 되어 에러가 발생해결 방법1. script는 body태그의 가장 아래에 작성2. window.onload = function(){} 을 사용한다.window.onload = function(){} 함수는 웹브라우저의 모든 구성요소에 대한 로드가 끝났을 때 브라우저에 의해서 호출되는 함수로,해당 부분에 넣으면 HTML을 모두 로드한 뒤에 함수를 호출한다.head태그 내부에 script 영역을 참조하는 부분이 있지만, window.onload 함수 내부에 문제가 되는 함수를 넣어줌으로써 해결할 수 있다.window.onload = function () {  var hw = document.getElementById(\"hw\");  hw.addEventListener(\"click\", function () {    alert(\"Hello world\");  });};3. deferScript 태그DOM이 생성될 때, Script 태그를 만나면 DOM 생성을 멈추고 Script를 실행한다.src 속성을 포함한 외부 스크립트를 만났을 때에도 마찬가지이다.해당 스크립트를 다운 받고 실행할 때 까지 Script 태그 아래에 선언된 DOM 요소들은 대기해야 한다.  여기서 DOM 생성을 중단하지 않고, 스크립트를 동시에 내려받게 할 수 있는 방법으로defer, async가 있다.출처https://velog.io/@ahn-sujin/Uncaught-TypeError-Cannot-read-property-addEventListener-of-nullhttps://gobae.tistory.com/110#DOM%–%EC%–%-D%EC%–%B-%–%EC%A-%–%EB%-B%A-%EC%-D%B-%–%EC%-D%BC%EC%–%B-%EB%–%-C%EB%-B%A-%EB%A-%B-%–%EC%–%B-%EB%–%A-%–%EB%AC%B-%EC%A-%-C%EA%B-%–%–%EB%B-%-C%EC%–%-D%ED%–%–%EB%-A%–%EA%B-%—"
+  },
+  
+  {
+    "title": "Are HTTP headers case-sensitive?",
+    "url": "/posts/api-%ED%85%8C%EC%8A%A4%ED%8A%B8/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-16 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "프론트엔드없이 api 테스트Postman을 다운로드하지 않아서 MacBook의 기본 curl 명령을 사용하여 API를 테스트메소드, 헤더 , 바디 넣어서 POST 요청1. Content-Type application/x-www-form-urlencoded  테스트하기위해-X (–request &lt;GET,POST,PUT,PATH,DELETE&gt; ...",
+    "content": "프론트엔드없이 api 테스트Postman을 다운로드하지 않아서 MacBook의 기본 curl 명령을 사용하여 API를 테스트메소드, 헤더 , 바디 넣어서 POST 요청1. Content-Type application/x-www-form-urlencoded  테스트하기위해-X (–request &lt;GET,POST,PUT,PATH,DELETE&gt; 요청시 사용할 메소드)-d (–data  )  -H (--header &lt;POST의 기본 Content-Type 은 application/x-www-form-urlencoded 이다  출처: https://inpa.tistory.com/entry/LINUX-📚-CURL-명령어-사용법-다양한-예제로-정리#curl_http_메서드 [Inpa Dev 👨‍💻:티스토리]&gt;)POST의 기본 타입 넣었더니 db에 Null이 찍힘2. body에 넣을 데이터가 text/html 인줄알았는데 null이 찍힘curl -I localhost:3000/registerHTTP/1.1 200 OKX-Powered-By: ExpressContent-Type: text/html; charset=utf-8Content-Length: 1542ETag: W/\"606-Q85bpMcLB39mgcBvBduYykU274I\"Date: Wed, 24 Jan 2024 16:00:23 GMTConnection: keep-aliveKeep-Alive: timeout=53. “Content-Type: application/json”fetch 를 사용할때 서버로부터 json 데이터를 받기 위해서 res.json()을 사용출처: https://haeguri.github.io/2018/12/30/compare-response-json-send-func/바디에 “Content-Type: application/json” 헤더를 넣었더니 값이 제대로 저장되었다.헤더는 대소문자를 구별하는가?curl localhost:3000/register -X POST -d '{\"id\":\"test\",\"pw\":\"1234\",\"name\":\"test\"}' -H 'content-type: application/json'{\"success\":true}%curl localhost:3000/register -X post -d '{\"id\":\"123\",\"pw\":\"123\",\"name\":\"123\"}' -H 'content-type: text/html'  post 소문자로 실패curl localhost:3000/register -d '{\"id\":\"123\",\"pw\":\"123\",\"name\":\"123\"}' -H 'content-type: text/html'{\"success\":true}%//데이터를 보내면 알아서 메소드 인식해줌HTTP 프로토콜은 헤더 이름의 대소문자를 구별하지 않습니다. 따라서 “content-type”과 “Content-Type”은 동일하게 처리됩니다. 이는 HTTP/1.1 스펙에 명시되어 있습니다.클라이언트가 서버로 HTTP 요청을 보낼 때, 헤더의 이름을 지정할 때에도 대소문자를 마음대로 사용할 수 있습니다. 서버는 이를 구분하지 않고 처리할 것이라 기대할 수 있습니다.요약하자면, HTTP 표준에 따르면 헤더의 대소문자는 구별되지 않지만, 실제로는 구현체에 따라 다를 수 있으므로 주의가 필요합니다."
+  },
+  
+  {
+    "title": "AWS 자격증",
+    "url": "/posts/awssaa/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-15 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "한 조직에서 다양한 프로세스를 조율하기 위해 마이크로서비스 아키텍처를 사용하는 온라인 저축 계좌 애플리케이션을 구현했습니다. 오케스트레이션 프로세스 중 하나는 저축 계좌 생성을 위한 다양한 API 호출을 오케스트레이션하는 “계정 생성”입니다. 성능상의 이유로 API 오케스트레이션은 동기 및 비동기 호출이 혼합되어 있습니다. 특정 비동기 호출이 실패할 ...",
+    "content": "한 조직에서 다양한 프로세스를 조율하기 위해 마이크로서비스 아키텍처를 사용하는 온라인 저축 계좌 애플리케이션을 구현했습니다. 오케스트레이션 프로세스 중 하나는 저축 계좌 생성을 위한 다양한 API 호출을 오케스트레이션하는 “계정 생성”입니다. 성능상의 이유로 API 오케스트레이션은 동기 및 비동기 호출이 혼합되어 있습니다. 특정 비동기 호출이 실패할 때 시스템을 일관성 없는 상태로 남겨두는 것이 관찰되었습니다. 예를 들어 예금 계좌는 생성되었지만 고객 정보는 생성되지 않았을 수 있습니다. 아키텍트로서 시스템의 최고의 내구성을 보장하기 위해 무엇을 하시겠습니까?saa귀하는 중요한 애플리케이션을 aws에 배포할 책임이 있습니다. 악의적인 활동을 식별하기 위해 웹 애플리케이션로그를 모니터링 해야 합니다cloudwatchvpc의 프라이빗 서브넷에서 호스팅되는 인스턴스가 있습니다. 인터넷에서 업데이트를 다운로드하려면 인스턴스가 필요합니다. 설계자로서 가장 효율적이고 안전한 it운영 팀에 어떤 변화를 제안하시겠습니까?A. 새 퍼블릭 서브넷을 만들고 인스턴스를 해당 서브넷으로 이동합니다B. 새 ec2 인스턴스를 생성하여 업데이트를 별도로 다운로드한 다음 필요한 인스턴스로 푸시합니다.C. NAT 게이트웨이를 사용하여 프라이빗 서브넷의 인스턴스가 업데이트를 다운로드하도록 허용합니다.D. 프라이빗 서브넷의 인스턴스가 업데이트를 다운로드 할 수 있도록 인터넷에 대한 vpc 링크를 생성합니다.당신은 모바일 앱과 웹사이트를 통해 판매할 스톡 이미지와 비디오를 제작하는 미디어 회사에서 일하는 솔루션 설계자입니다. 앱과 웹사이트에서 사용자는 자신이 구매한 스톡 콘텐츠에만 액세스 할 수 있습니다. 콘텐츠는 s3 버킷에 저장됩니다. 사용자가 구매한 여러 파일에 대한 액세스를 제한해야 합니다 또한 스톡 콘텐츠(여러사용자가 구매가능)의 특성으로 인해 각 스톡 항목의 url을 변경하고 싶지 않습니다 귀하의 시나리오에 가장 적합한 액세스 제어 옵션은 무엇입니까?SAA associatedit 회사는 최근 웹서버가 sqs대기열의 메시지를 통해 애플리케이션 서버와 통신할 수 있도록SAA웹사이트는 elastic load balancer 뒤에 있는 두개의 ec2 인스턴스에서 호스팅 됩니다 웹사이트의 응답 시간이 크게 느려지고 대기 시간으로 인해 고객의 주문이 줄어 듭니다 문제 해결을 통해 ec2 인스턴스 중 하나에 장애가 발생했으며 현재 하나의 인스턴스만 실행되고 있는 것으로 나타났습니다애플리케이션은 다음 vpc 아키텍처로 구성됩니다elb뒤의 여러 az에 있는 ec2 인스턴스ec2 인스턴스는 auto scaling 그룹을 통해 시작됩니다인터넷에서 업데이트를 다운로드 하기 위해 모든 az의 인스턴스에 대해 하나의 nat 게이트웨이가 있습니다.가용성에 기반한 아키텍처의 병목 현상은 무엇입니까?대기열 및 메시징 개념saa미디어 회사는 aws에서 관계형 데이터 베이스를 호스팅할 계획입닏다 그들은 수동 개입 없이 가변적이고 예측할수없는 워크로드를 처리할수 있고 애플리케이션의 사용자 트래픽에 따라 컴퓨팅 용량을 확장 및 축소할수있는 rds 제품군의 데이터 베이스를 원합니다a. amazon aurorab. amazonc. amazon aurora serverlesssaa1gb-3gb 범위의 대용량 파일을 aws s3 버킷에 업로드하고있습니다 사용자가 다운로드 중에 잠재적 손상을 식별하기 위해 체크섬의 유효성을 검사할 수 있도록 조직에는 전체 파일을 읽어 파일의 해시 체크섬을 계산해야 하는 요구사항이 있습니다 이를 위해 lambda함수를 생성하고 s3알림을 통해 트리거되도록 했습니다 그러나 요청 시가니SAA1GB – 3GB 범위의 대용량 파일을 AWS S3 버킷에 업로드하고 있습니다. 사용자가 다운로드 중에 잠재적 손상을 식별하기 위해 체크섬의 유효성을 검사할 수 있도록 조직에는 전체 파일을 읽어 파일의 해시 체크섬을 계산해야 하는 요구 사항이 있습니다. 이를 위해 Lambda 함수를 생성하고 S3 알림을 통해 트리거되도록 했습니다. 그러나 요청 시간이 초과되었습니다. 그 이유는 무엇입니까?A. Lambda 함수는 128MB의 최소 메모리로 구성됩니다.B. Lambda 함수는 NAT 게이트웨이 또는 VPC 엔드포인트 없이 프라이빗 VPC에서 실행되도록 설정됩니다.C. 환경 변수에 S3 버킷 이름을 설정하지 않았습니다.D. Lambda 함수는 S3 버킷과 다른 리전에서 생성됩니다.Cassandra를 실행하려면 여러 EC2 인스턴스를 시작해야 합니다. Cassandra에는 대규모 분산 및 복제 워크로드가 있으며 EC2 배치 그룹을 사용하여 인스턴스를 시작할 계획입니다. 트래픽은 여러 파티션에 고르게 분산되어야 하며 각 파티션에는 여러 인스턴스가 포함되어야 합니다. 요구 사항을 달성하기 위해 다음 배치 그룹 중 어느 것을 사용하시겠습니까?A. 클러스터 배치 그룹B. 스프레드 배치 그룹C. 파티션 배치 그룹D. 네트워크 배치 그룹aws 컴퓨팅 서비스와 적합한 용례ENAEFAENIEN의 차이를 공부스토리지 서비스와 적합한 용례EFS"
+  },
+  
+  {
+    "title": "Ec2 보안 평가 6",
+    "url": "/posts/ec2-%EB%B3%B4%EC%95%88-%ED%8F%89%EA%B0%80-6/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-14 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "amazon inspectoraws 컴퓨팅 자원의 네트워크 액세스 가능성 및 해당 인스턴스에서 실행되는 애플리케이션의 보안 상태를 테스트하여 보안과 규정 준수 수준을 향상시키는 자동화된 보안 수준 점검 기능을 제공amazon ec2ecr repo &amp; container imagelambda",
+    "content": "amazon inspectoraws 컴퓨팅 자원의 네트워크 액세스 가능성 및 해당 인스턴스에서 실행되는 애플리케이션의 보안 상태를 테스트하여 보안과 규정 준수 수준을 향상시키는 자동화된 보안 수준 점검 기능을 제공amazon ec2ecr repo &amp; container imagelambda"
+  },
+  
+  {
+    "title": "Ddos 방어",
+    "url": "/posts/ddos-%EB%B0%A9%EC%96%B4/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-13 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "DDoS (분산 서비스 거부 공격)● 악성 코드에 감염된 컴퓨터, 라우터, IoT 장치 및 기타 엔드 포인트의 분산된 그룹으로 이루어진 여러 소스를 사용하여 대상을 압도하는 패킷 또는 요청을 생성하는 공격tcp 3way handshake",
+    "content": "DDoS (분산 서비스 거부 공격)● 악성 코드에 감염된 컴퓨터, 라우터, IoT 장치 및 기타 엔드 포인트의 분산된 그룹으로 이루어진 여러 소스를 사용하여 대상을 압도하는 패킷 또는 요청을 생성하는 공격tcp 3way handshake"
+  },
+  
+  {
+    "title": "Aws 네트워크 보안3",
+    "url": "/posts/aws-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%883/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-12 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "어플리케이션의 위협 보호owasp의도하지않은악성SQL문자를삽입해웹사이트를 통해 데이터베이스를 비정상적으로 조작하거나 정보를 출력하는 해킹 기법예) 나는 ‘모든 회원’이야. 내 정보를 줘예) 나는 ‘모든 회원’이야. 내 정보를 다 지워 줘Sample code:https://www.owasp.org/index.php/Testing_for_SQL_Injec...",
+    "content": "어플리케이션의 위협 보호owasp의도하지않은악성SQL문자를삽입해웹사이트를 통해 데이터베이스를 비정상적으로 조작하거나 정보를 출력하는 해킹 기법예) 나는 ‘모든 회원’이야. 내 정보를 줘예) 나는 ‘모든 회원’이야. 내 정보를 다 지워 줘Sample code:https://www.owasp.org/index.php/Testing_for_SQL_Injection_( OTG-INPVAL-005) 3. 어플리케이션 위협보호● SQLinjection방지  동적 SQL 사용을 가급적 제한  입력 값에 적절한 검증 절차를 적용하고 위험한 값은 위험하지 않은 값으로 치환, 입력 값이 허용 범위내에있는지사전조치  데이터베이스의 여러 리턴 및 에러 메시지 외부 노출 금지  웹 보안 취약점을 주기적으로 점검 및 Secure Coding 지향  웹 방화벽 사용웹 공격 : Cross Site Scripting공격자에 의해 작성된 스크립트가 다른 사용자에게 전달되고 해당 스크립트로 페이지가 깨지거나 쿠키 및 개인 정보를 특정 사이트로 탈취하는 공격  공격자가 취약한 웹사이트에 악의적인 스크립트를 주입  희생자 (일반 사용자)가 웹사이트에서 악의적인 스크립트를 트리거  희생자의 브라우저에서 악의적인 스크립트가 실행되어 희생자가모르는 사이 주요 데이터들이 공격자에게 전송  어플리케이션 위협보호● Cross Site Scripting 방지1) 내용 입력란에 HTML 태그와 자바 스크립트를 금지2) 문제성이 있는 입력 데이터를 오류 메시지와 함께 출력하지 않도록 Encoding, Escape 활용3) 웹 보안 취약점을 주기적으로 점검 및 Secure Coding 지향4) 웹 방화벽 사용aws waf규칙 생성방법      amazon manged rule자체 규칙을 작성하지 않고 일반적인 애플리케이션 취약성 또는 기타 원치 않는 트래픽에 대한 보호를 제공하는 aws 관리형 서비스wcu 1500안에서aws threat research team trt에서 관리하고 유지하는 규칙 세트amazon        custom rule        aws marketplace  waf full 로깅"
+  },
+  
+  {
+    "title": "Aws 네트워크보안2",
+    "url": "/posts/aws-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%B3%B4%EC%95%882/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-11 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "2 네트워크 격리 및 접근제어vpc를 보안관점으로 뜯어보면네트워크 보호의 시작 vpc (virtual private cloud)private networkaws 특정 iam user랑보안그룹 (security group)인스턴스 단위상태 저장(stateful)동적 구성최소 권한 원칙네트워크 접근 제어 리스트 (NACL) network access co...",
+    "content": "2 네트워크 격리 및 접근제어vpc를 보안관점으로 뜯어보면네트워크 보호의 시작 vpc (virtual private cloud)private networkaws 특정 iam user랑보안그룹 (security group)인스턴스 단위상태 저장(stateful)동적 구성최소 권한 원칙네트워크 접근 제어 리스트 (NACL) network access control list서브넷 단위상태 비저장(stateless)최소 권한 원칙보안그룹을 보안디도스 공격이 들어올때 서브넷단위로 막아준다vpc 보안계층 security group &amp; NACLvpc 엔드포인트gateway endpointss3, dynamoDBmanaged prefix라우팅 최적화internet endpointskinesis datastream, glue 외private ENIendpoint service(aws privateLink)장점 보안, 비용, NACL를 태우는것보다 저렴 트래픽 처리 비용 비쌈vpc prefix list트래픽 모니터링 -vpc flow lognetwork reachability analyzer(network manager)  한 vpc 내의 두 엔드포인트 또는 여러 vpc 내의 엔드포인트 간에 연결 가능성 문제를 해결하는 네트워크 진단 도구  소스와 대상 사이의 가상 네트워크 경로에 대한 홉별 세부 정보를 생성  대상에 연결할 수 없는 경우 차단 구성 요소를 식별"
+  },
+  
+  {
+    "title": "Aws 네트워크 보안1",
+    "url": "/posts/aws-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%881/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-10 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "인프라보안에 중심에있는 네트워크 보안온프로미스처럼 격리된 공간을 만들수있기 때문에정통적인 데이터 센터들과기존의 네트워크 보안에 대해 잘아는분들은아주 간단한 네트워크 아키텍처디폴트 vpc안에 어플리케이션 구성 alb 정적컨텐츠 s3에 구성악의적인 행위자는 언제나 약한 부분을 공략다양한 네트워크 공격osi 7 레이어는 네트워크의 기본네트워크 프로토콜 통신...",
+    "content": "인프라보안에 중심에있는 네트워크 보안온프로미스처럼 격리된 공간을 만들수있기 때문에정통적인 데이터 센터들과기존의 네트워크 보안에 대해 잘아는분들은아주 간단한 네트워크 아키텍처디폴트 vpc안에 어플리케이션 구성 alb 정적컨텐츠 s3에 구성악의적인 행위자는 언제나 약한 부분을 공략다양한 네트워크 공격osi 7 레이어는 네트워크의 기본네트워크 프로토콜 통신하는 구조를 7계층으로 분리해놓은ip 통신 3층tcp udp 4층http 7층공격은 물리적인네트워크 보호를 위한 레이어objective: 확장성이 뛰어나고 안전하며 편하게 모니터링 할 수 있는 ddos 보호 애플리케이션을 구축네트워크 격리 vpc네트워크 접근 제어 security group &amp; NACL네트워크 방화벽 aws network firewall service어플리케이션 위협 보호 aws wafddos 방어 aws shield"
+  },
+  
+  {
+    "title": "Iam 실습 2",
+    "url": "/posts/iam-%EC%8B%A4%EC%8A%B5-2/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-09 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "aws sso 구성aws single sign on  1번 계정에서 aws organization 구성  1번 계정의 organization에서 2번 계정 초대  1번 계정에서 aws sso 구성ㄱ. 사용자/ 그룹/ 권한 세트 생성ㄴ. 계정에 사용자 및 권한 추가  2번 계정에서 sso 로그인 테스트  cli에서 sso로 로그인 테스트자격 증명 소스 ...",
+    "content": "aws sso 구성aws single sign on  1번 계정에서 aws organization 구성  1번 계정의 organization에서 2번 계정 초대  1번 계정에서 aws sso 구성ㄱ. 사용자/ 그룹/ 권한 세트 생성ㄴ. 계정에 사용자 및 권한 추가  2번 계정에서 sso 로그인 테스트  cli에서 sso로 로그인 테스트자격 증명 소스 선택자격 증명 센터 디렉토리, active directory, 외부 자격 증명 공급자iam 유저를 생성하지 않고도 사람 사용자가 접근을 할 수 있었음sso의 장점은 로컬에서 iam user 크레덴션을 설정하지않아도 바로 롤을 assume 할 수 있다.엑세스키 로컬에 심어주지 않아서 보안적으로 더욱 좋다..다양한 써드파티 추가해서 업그레이드 할 수 있다.자원삭제aws ssoorganization 멤버 삭제iam user / iam role 삭세iam identity center설정 관리 IAM 자격 증명 센터 구성 삭제"
+  },
+  
+  {
+    "title": "Iam 실습 1",
+    "url": "/posts/iam-%EC%8B%A4%EC%8A%B5-1/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-08 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "aws iam 실습cross account role 실행aws sso 구성cross account role 실행 시나리오iam user의 권한을 가지고 role assumeaws account 준비1번 어카운트에서 iam user 생성iam user에 정책 연결2번 어카운트에서 iam user가 assume할 iam role 생성콘솔에서 role sw...",
+    "content": "aws iam 실습cross account role 실행aws sso 구성cross account role 실행 시나리오iam user의 권한을 가지고 role assumeaws account 준비1번 어카운트에서 iam user 생성iam user에 정책 연결2번 어카운트에서 iam user가 assume할 iam role 생성콘솔에서 role switch 테스트aws cli 에서 role switch 테스트cross account role 실행 시나리오 절차aws cli 에서 role switch 테스트aws cli 구성: https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.htmlaws 권한 세팅aws configureaws configure listaws sts get-caller-identityaws sts assume-role –role-arn “arn:aws:iam::&lt; 2번째 어카운트 id &gt;:role/cross-accounter-role” –role-session-name &lt;iamtest(아무거나)&gt;aws sts get-caller-identityaws s3 lsaws s3 rb s3://mybucket1234"
+  },
+  
+  {
+    "title": "AWS 접근제어#6 IAM 관리",
+    "url": "/posts/aws-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B46/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-07 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "IAM 관리IAM policy 작성 툴iam visual editor &amp; policy generator:iam policy simulatorhttps://policydIAM 샘플 정책 활용aws지정 날짜 범위 동안의 액세스 허용지정 날짜 범위 동안 mfa를 사용하는 경우 특정 액세스를 허용소스 ip주소를 바탕으로 aws에 대한 액세스 거부정책예...",
+    "content": "IAM 관리IAM policy 작성 툴iam visual editor &amp; policy generator:iam policy simulatorhttps://policydIAM 샘플 정책 활용aws지정 날짜 범위 동안의 액세스 허용지정 날짜 범위 동안 mfa를 사용하는 경우 특정 액세스를 허용소스 ip주소를 바탕으로 aws에 대한 액세스 거부정책예제: aws codecommit프로그램 방식으로 콘솔에서 aws codecommit 리포지토리에 대한 read 액세스 허용정책예제 aws data pipeline사용자가 생성하지 않은 파이프라인에 대한 액세스 거부정책예제: amazon dynamodb특정 amazon dynamodb 테이블에 대한 액세스 허용iam access advisoriam에 대해 서비스에서 마지막으로 액세스한 데이터를 조회불필요한 권한을 제거하고 least privileged를 유지할 수 있음access advisors3,ec2,iam,lambda management action 에 대해서는 action단위로 조회가능fine-grained s3 버킷 정책을 위해 활용data action cloudtrail에서 명시적으로 체크해야됨iam credential report계정의 모든 사용자와 암호, 액세스 키 ,mfa 디바이스 등 자격 증명 상태에 대한 보고서감사 및 규정 준수에 활용할수있다다운을 정기적으로하거나 자동화 (mfa 활성화 여부)iam access analyzer리소스에 대한 public 혹은 cross-account 접근을 검사하여 과도하게 권한이 주어진 자원을 판별해주는 기능analyzer 결과로 내 계정 내, 외부에서 액세스 가능한 리소스 리스트를 보여주고, next step을 제안리전별로 따로 만들어야된다iam role, s3, lambda, kms key, sqs qeue상시 모니터링/탐색으로 정책이 변경되는 순간 탐지 security hub로 전달iam access analyzer 확장console에서 bucket access 프리뷰, validate, public &amp; cross account access, policy validation, policy generation클라욷드트레일로그를 기반으로 실제로 접근했던 api목록을 뽑아준다 정책을 만들어준다iam 정책 생성 자동화iam 사용자 -&gt; 임의의 iam policy 생성 후 업로드 -&gt; AWS CODEPIPEline오픈소스를 활용한 iam 권한 관리policy_sentry: iam least privilege policy generator 도구parliament: iam linting library로, 작성한 정책 리뷰 (예: 잘못된 json, 필수 요소 누락 등)netflix aardvark/repokid:access advisor 기반으로 정보를 조회하고 불필요한 권한을 제거iamctl: 두개의 계정에서 iam 역할 및 정책을 추출하고 비교하고 차이점과 통계를보고cloudsplaininng컴플라이언스 체크: aws config rulesconfig: aws 리소스의 변경사항을 추적하고 감사하는 서비스config rules: 해당 변경 사항이 기준 정책에 위반될 때, 대응 규칙 실행(경보, 차단 등 aws lambda 활용)보안 위협 탐지: amazon GuardDutyAPI 활동 기록 및 감사: AWS CloudTrailaws api 요청의 처리내역을 로깅하는 서비스"
+  },
+  
+  {
+    "title": "AWS 접근제어#5 운영자를 위한 AWS STS",
+    "url": "/posts/aws-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B45/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-06 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "로컬 aws 자격증명cli credential 구성 방법./aws/credentials|해야 할 일|해서는 안 될 일||—|—||자격 증명 파일 사용| 루트계정 자격증명사용||aws security token service(aws sts)의 임시 자격 증명 사용|코드에 aws 자격증명삽입||iam 역할 사용(선호)|git repository, wiki...",
+    "content": "로컬 aws 자격증명cli credential 구성 방법./aws/credentials|해야 할 일|해서는 안 될 일||—|—||자격 증명 파일 사용| 루트계정 자격증명사용||aws security token service(aws sts)의 임시 자격 증명 사용|코드에 aws 자격증명삽입||iam 역할 사용(선호)|git repository, wiki와 같이 공개된 위치에 자격증명저장|"
+  },
+  
+  {
+    "title": "AWS 접근제어#4 AWS STS",
+    "url": "/posts/aws-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B44/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-05 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "AWS STS(Simple Token Service)AWS 리소스에 대한 액세스를 제어할 수 있는 임시 보안 자격증명을 생성하여 보안 주체에 전달해주는 서비스보안주체(사용자 혹은 역할)는 sts를 호출할 수 있는 명시적인 권한이 있어야함.STS API요청에 대한 응답에는 temp credential이 포함되어 있음access keysecret keys...",
+    "content": "AWS STS(Simple Token Service)AWS 리소스에 대한 액세스를 제어할 수 있는 임시 보안 자격증명을 생성하여 보안 주체에 전달해주는 서비스보안주체(사용자 혹은 역할)는 sts를 호출할 수 있는 명시적인 권한이 있어야함.STS API요청에 대한 응답에는 temp credential이 포함되어 있음access keysecret keysession token: temp credential을 사용하기 위해 api 요청에 제출해야하는 토큰.세션토큰을 사용해 임시 보안 자격 증명의 유효성을 검증15초~최대 12시간까지 지속가능https://sts.amazonaws.com 라는 글로벌 단일 엔드포인트를 default로 사용리전별 aws sts엔드포인트를 사용하여 지연 시간을 줄이고, 중복으로 구축하고, 세션 토큰 유효성을 높일수있음쿼리 api sdk cli를 통해 sts 호출 가능aws sts api            AWS STS API      호출할 수 있는 사용자      사용사례                  AssumeRoleWithSAML      IAM 사용자 기존 임시보안 자격 증명이 있는 IAM역할      기존 IAM 사용자가 아직 액세스 권한이 없는 AWS 리소스에 접근              AssumeRoleWithSAML      유효한 ID provider에서 받은 인증이 포함된 SAML 응답을 전달할 수 있는 (외부) 사용자      SAML 2.0과 호환되는 엔터프라이즈 자격 증명 공급자 (window AD, OpenLDAP)을 통한 연동      aws sts assume role request 예시"
+  },
+  
+  {
+    "title": "Aws 접근제어3",
+    "url": "/posts/aws-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B43/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-04 21:55:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "",
+    "content": ""
+  },
+  
+  {
+    "title": "AWS 접근제어#3 IAM Policy",
+    "url": "/posts/aws-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B42/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-03 12:11:11 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "AWS IAM policy의 JSON 구조{    \"version\": \"2012-10-17\",    \"Statement\": [        {            \"Effect\": \"Allow(허용) 또는 Deny(차단)\",            \"Action\": [                ... 어떤 행위를?            ],        ...",
+    "content": "AWS IAM policy의 JSON 구조{    \"version\": \"2012-10-17\",    \"Statement\": [        {            \"Effect\": \"Allow(허용) 또는 Deny(차단)\",            \"Action\": [                ... 어떤 행위를?            ],            \"Resource\": [                ... 어떤 객체(리소스)들에 대해?            ],            \"Condtion\": {                ... 어떤 조건에서?(optional)            }        }    ]}예제: DynamoDB로 부터 데이터 읽기{    \"version\": \"2012-10-17\",    \"Statement\": [        {            \"Effect\": \"Allow(허용) 또는 Deny(차단)\",            \"Action\": [                ... 어떤 행위를? \"dynamodb:*\"            ],            \"Resource\": [                ... 어떤 객체(리소스)들에 대해? \"*\"            ],            \"Condtion\": {                ... 어떤 조건에서?(optional)            }        }    ]}{    \"version\": \"2012-10-17\",    \"Statement\": [        {            \"Effect\": \"Allow(허용) 또는 Deny(차단)\",            \"Action\": [                \"dynamodb:GetItem\",                \"dynamodb:PutItem\"            ],            \"Resource\": [                \"*\"            ],            \"Condtion\": {                ... 어떤 조건에서?(optional)            }        }    ]}{    \"version\": \"2012-10-17\",    \"Statement\": [        {            \"Effect\": \"Allow\",            \"Action\": [                \"dynamodb:GetItem\",                \"dynamodb:PutItem\"            ],            \"Resource\": [                \"arn:aws:dynamodb:ap-northeast-2:&lt;accountidd&gt;:table/example\"            ],        }    ]}리소스와 ARN(Amazon Resuouce Name)리소스: aws 상의 관리 대상 자원들 예들 들어 s3버킷, dynamoDB테이블,EC2인스턴스, VPC등 IAM 보안주체들도 ARN이 부여된ARN: a fully-qualified name for that resource, used throughout AWS   \"arn:aws:dynamodb:ap-northeast-2:&lt;accountid&gt;:table/example\"    service         region         accountid   service-specific name    리소스와 Amazon Resource NameResource 또는 NotResource(여집합, 규정된 것 제외하고 나머지)를 지원“Resouce”: “arn:aws:s3:::mybucket/”“NotResource”: “arn:aws:s3:::mybucket/”“Resouce”: [“arn:aws:s3:::my_bucket/*”, “arn:aws:dynamodb:ap-northeast-2::table/test\"]특정리전에 있는 전체 인스턴스\"Resouce\":\"arn:aws:ec2:ap-northeast-2::instace/\\*\",아이피조건걸기{    \"version\": \"2012-10-17\",    \"Statement\": [        {            \"Effect\": \"Allow(허용) 또는 Deny(차단)\",            \"Action\": [                \"dynamodb:GetItem\",                \"dynamodb:PutItem\"            ],            \"Resource\": [                \"*\"            ],            \"Condtion\": {                \"IpAddress\": {                    \"aws:SourceIp\": \"1.1.1.1\"                },            }        }    ]}정책 condition특정 시간때에 특정 IP 주소의 요청만 허용하거나 거부하고자 싶은면?“Condition”: {“DateGreaterThan”: {“aws:CurrentTime”: “2023-12-23T11:00:00Z”},“DateLessThan”: {“aws:CurrentTime”: “2023-12-23T15:00:00Z”},“IpAddress”: {“aws:SourceIp”: [“192.0.2.0/24”, “203.0.113.0/24”]}}다음조건을 만족할 경우, 사용자가 자원에 접근하는 것을 허용,{“12/23/2023오전 11시 이후”,AND“12/23/23023 오후 3시까지”,IP주소 192.0.2.0/24OR203.0.113.0/24 대역} 에서정책변수{    \"version\": \"2012-10-17\",    \"Statement\": [        {            \"Effect\": \"Allow\",            \"Action\": [\"s3:ListBuckete\"],            \"Resource\": [\"arn:aws:s3:::mybucket\"],            \"Condtion\": {\"String\": {\"s3:prefix\": [\"sanghoon/*\"]}}        },        {            \"Action\": [                \"s3:GetObject\",                \"s3:PutObject\"            ],            \"Effect\": \"Allow\",            \"Resource\": [\"arn:aws:s3:::mybucket/sanghoon/*\"]        }    ]}정책변수$(Condition Key)형식으로 변수화사용자마다 고유한 정책 사본을 만들 필요 없이 여러 사용자에게 작용하도록 정책을 일반화정책 변수는 Resource 요소 / Conditon 요소의 문자열 비교에 사용 가능이 정책을 평가할 때는 IAM이 정책 변수를 실제 요청의 string으로 대체{    \"version\": \"2012-10-17\",    \"Statement\": [        {            \"Effect\": \"Allow\",            \"Action\": [\"s3:ListBuckete\"],            \"Resource\": [\"arn:aws:s3:::mybucket\"],            \"Condtion\": {\"String\": {\"s3:prefix\": [\"${aws:username}/*\"]}}        },        {            \"Action\": [                \"s3:GetObject\",                \"s3:PutObject\"            ],            \"Effect\": \"Allow\",            \"Resource\": [\"arn:aws:s3:::mybucket/${aws:username}/*\"]        },    ]}iam policy정책종류            정책      설명      포맷      정의 및 관리                  Identitiy-based 정책      IAM 보안 주체(iam사용자,iam 그룹의 사용자집합,iam 역할)에 할당되어 해당 주체의 권한을 규정      JSON      IAM              Resource-based 정책      정책이 할당될 리소스를 기준으로 어떤 보안 주체가 할 수 있(없)는 작업을 규정.      JSON      개별서비스들              IAM Permisiion Boundary 정책      IAM 보안 주체 별로 획득할 수 있는 권한의 최대치를 규정      JSON      IAM              Organization SCP      Oragnization의 OU 또는 개별 어카운트 별로 권한의 최대치를 규정 주로 Root 어카운트의 권한을 제한 시킬 때 사용.      JSON      Organization              Session 정책      임시 자격증명의 기존 퍼미션을 해당 세션에 대해서만 제한할 때 사용 AssumeRole*,GetFederationToken API의 파라미터로 전달됨      JSON      STS              ACL 정책      리소스 기주능로 정의하며, 주로 Cross-Account 간의 리소스 고유시, 보안주체에 대한 접근을 규정      XML      개별서비스들              Endpoint 정책      VPC G/W Endpoint에 적용되는 접근제어 정책.일종의 Reesource-based 정책      JSON      VPC      Identity based 와 resource based policy"
+  },
+  
+  {
+    "title": "AWS 접근제어#1",
+    "url": "/posts/aws-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-02 11:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "2 aws iam의 인증과 인가identity: iam user의인증credential장기 iam user, root, 일반적으로 장기는 취약임시iam 사용자에게는 상시 자격증명(acceess key/secret access key페어)이 부여rest api, cli, sdk등을 통해 활용identity: iam role의 인증(인스터스, 기타aws서...",
+    "content": "2 aws iam의 인증과 인가identity: iam user의인증credential장기 iam user, root, 일반적으로 장기는 취약임시iam 사용자에게는 상시 자격증명(acceess key/secret access key페어)이 부여rest api, cli, sdk등을 통해 활용identity: iam role의 인증(인스터스, 기타aws서비스)iam role 에는 임시 자격증명이 부여  access key  secret access key  security token(with time limit)identity: iam role의 인증(외부사용자)cross accountaws role(역할)장기크레덴셜을 로테이션하지않는이상 서버의 하드코딩하면 위험롤은 임시자격증명access key 없이 arn으로 사용해서 위험이 없음trusted entities권한의 위임 체계를 지원권한정책(해당 역할에 부여될 권한을 규정) + 신뢰정책(해당 역할을 할 수 있는 보안주체 규정)동일 또는 타 어카운트, aws 서비스(ec2,람다 등), 외부인증연계(Federated) 사용자에 부여수임(assumerole) 조건으로 MFA를 지원함IAM 역할을 수임한 IAM 사용자에게는 본래 권한 대신 IAM역할에서 규정된 권한으로 대체AWS IAM Role vs UserIAM Role을 이용하는 경우는자동홛된 프로세스에서aws 서비스들 사이에서인증연계된 외부 사용자들이임시 자격증명으로 인증IAM User을 이용하는 경우는실사용자 기준으로 통제할때상시 자격증명으로 인증IAM Group으로 관리 가능AWS IAM GroupIAM 권한을 한꺼번에 주기 위한 용도임그룹간 포함(Nested)관계는 불가자동 소속되는 기본 그룹은 없음IAM 사용자는 복수개의 그룹에 소속 가능(최대 10개)IAM Group은 보안 주체가 아님Access Management: IAM의 인가모든 AWS 서비스는 접근제어 정책을 기반으로 인가매 API호출시, 적용된 정책을 통해 인가 수행정책은 IAM 역할/사용자/그룹, AWS 리소스, 임시 자격증명 세션, OU 등에 적용할 수 있음AWS Root 어카운트는 기본적으로 AWS 리소스에 대한 모든 권한을 가짐AWS 정책은 기본 디폴트 Deny명시적 Allow &lt; 명시적 Deny의 우선순위AWS API 요청의 인증 단계보안주체가 콘솔, API, CLI를 통해 전송한 요청들은 다음 단계에 따라 평가되고 허용 여부가 판단:요청자 인증 - 익명 요청을 허용하는 S3, Cognito 등 일부 서비스가 있음요청 컨텍스트 수집 요청 주체, 요청된 리소스 및 관련 데이터, 요청된 작업, 환경 데이터(IP,시간대)등을 수집하고 적합한 접근제어 정책(들)을 찾음접근제어 정책 평가()요청의 허용/거부 결정()AWS API 요청의 성공 조건IAM 보안 주체의 적법한 서명값이 포함되어 있고(인증)AND정책(policy)에 의해 해당 요청이 정확하게 인가되어야함IAM 기본 요약  Root(Super User)                    모든 서비스에 대한 접근(권한 조정 불가)                    콘솔과 API에 대한 접근                    빌링 및 고객 지원(Customer Support)에 대한 접근              IAM Users                    특정 서비스에 대한 접근                    콘솔과 API에 대한 선택적 접근                    고객 지원(Customer Support)에 대한 접근                    Password / Long term credential 사용              IAM Group                    IAM 사용자 관리 편리성을 제공                    권한을 한꺼번에 주기 위한 용도                    IAM사용자는 복수개의 그룹에 속할 수 있음              IAM Role                    특정 서비스에 대한 접근                    콘솔과 API에 대한 선택적 접근                    고객 지원(Customer Support)에 대한 접근                    temp credential 사용              Policy                    권한은 요청이 허용되거나 거붇되는지 여부를 결정                    JSON 문서로 작성            "
+  },
+  
+  {
+    "title": "AWS-IAM",
+    "url": "/posts/aws-iam/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-10-01 12:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "aws iamaws consoleaws cliaws sdk어떤방식으로든 api로 이루어진다 물론 리소르끼리의 응답도 api매 api호출마다, aws cli 및 sdk 등에도 처리되는 인증 절차access key로 요청 주체 (principal)을 인증secret key hmac 서명값을 검증X-Amz-Security-Token:Authorization...",
+    "content": "aws iamaws consoleaws cliaws sdk어떤방식으로든 api로 이루어진다 물론 리소르끼리의 응답도 api매 api호출마다, aws cli 및 sdk 등에도 처리되는 인증 절차access key로 요청 주체 (principal)을 인증secret key hmac 서명값을 검증X-Amz-Security-Token:Authorization:AWS4-HMAC-SHA256credentialsignatureaws iamI(identity): aws로 요청을 할 수 있는 보안주체(Principal)를 AWS 어카운트 내에 생성AM(Access Management): 누가 어떤 리소스들에 대해 어떤 일을 할 수 있는 권한을 가지느지를 정의IAM은 AWS전체의 권한 통제 시스템권한 제어는 인증과 인가 outhentiation authenticationiam 보안주체 (principal)aws 어카운트 내에 정의된 요청 주체(identity)CloudTrail “userIdentity” 요소 기준, 다음사용자 유형을 구별:root-api 요청이 aws acccount 자격증명을사용iam User - api 요청이 ima user의 자격증명을 사용assume role- api 요청이 aws sts AssumeRole을 통해 역할로 획득된 임시보안 자격증명을 사용Federated User - api 요청이 AWS STS GetFederation Token을 통해 획득한 임시 보안 자격증명을 사용AWS Account-다른 AWS Account에서 요청AWS Service AWS 서비스에 속한 AWS 계정을 통해 요청SAML이나 WebIdentity Federation을 하는 경우:SAMLUser- SAML 어설션이 이루어지는 요청WebIDentitiyUser- 웹자격 증명 연동 제공업체로 이루어지는 요청"
+  },
+  
+  {
+    "title": "aws 보안 \\#3",
+    "url": "/posts/aws-%EB%B3%B4%EC%95%88-3/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-09-30 11:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "aws 보안 공동 책임 모델aws와 고객이 함께 만들어가야되는사용자가 커스터마이즈가 가능할수록 고객의 책임이 커짐aws의 보안을 위한 노력 : compliance 를 주기적으로 승인받는다pci,feedramp,hipaa(미국,의료),k-isms(한국)그래서 aws와 사용자의 영역이 다르고 사용자가 늘 사용할때 책임자의 영역에 들어가있으므로 주의해야된다...",
+    "content": "aws 보안 공동 책임 모델aws와 고객이 함께 만들어가야되는사용자가 커스터마이즈가 가능할수록 고객의 책임이 커짐aws의 보안을 위한 노력 : compliance 를 주기적으로 승인받는다pci,feedramp,hipaa(미국,의료),k-isms(한국)그래서 aws와 사용자의 영역이 다르고 사용자가 늘 사용할때 책임자의 영역에 들어가있으므로 주의해야된다.4.aws 보안 빌딩 블록aws well-architected보안  사용자 접근제어, 탐지보안, 인프라보안, 데이터보안, 침해대응사용자 접근제어console,cli,api다중의접근제어매커니즘 개별권한관리권한을 사용하는운영자동화를위하면 cli api결국 api를 통해 프로덕션이 되기 때문에 api를 어떻식으로 보호인프라보안기존의 온프레미스랑 비슷여러레이어로 나누어서 보호 다양한 레벨을 아우를수있는ddos방어 aws shield어플리케이션 위협 보호 aws waf네트워크 방화면 aws network firewall service네트워크 접근 제어 security group NACL네트워크 격리 aws vpc탐지제어 침해대응로깅뿐만아니라 realtime 모니터링을 통해여러계츠으이 로그를 중앙집중식aws cloudtailamazon cloudwatch eventamazon guarddutyamazon cloudwatchaws configamazon s3amazon s3 glacieramazon athenaamazon inspectoraws security hubamazon클라우드 환경에서 보안 업무를 한다는 것은..결코 쉬운일이 아님기존보안에 대한 기본을 알아야된다새로운 클라우드환경의 이해새로운 공격 형태에 대한 이해devsecops의 구현compliance 어느 기업도 피할수없는과정gameday(해커톤)개발속도에만취중한사람의보안의식고취시키기계속채워나가야되는 업무,"
+  },
+  
+  {
+    "title": "aws 보안 \\#2",
+    "url": "/posts/aws-%EB%B3%B4%EC%95%88-2/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-09-29 11:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "보안 침해 사례Capital One(2019) AWS보안 안전성 도마위에SSRF 취약점으로 ec2 메타데이터 접근랜섬웨어블록체인 채굴개인정보 유출클라우드는 위험하다AWS AZUER 퍼블릭 클라우드라서 개인정보를 둘수없다SSRF(Server-Side Request Forgeery)어플리케이션에 비해 많은 권한비정상적인 api 요청 기능를 안씀개발자의 부...",
+    "content": "보안 침해 사례Capital One(2019) AWS보안 안전성 도마위에SSRF 취약점으로 ec2 메타데이터 접근랜섬웨어블록체인 채굴개인정보 유출클라우드는 위험하다AWS AZUER 퍼블릭 클라우드라서 개인정보를 둘수없다SSRF(Server-Side Request Forgeery)어플리케이션에 비해 많은 권한비정상적인 api 요청 기능를 안씀개발자의 부주의함클라우드 환경사고 95% 고객실수가 기인클라우드 보안의 진짜 위험개발과 운영의 기준이 모호개발속도가 빨라짐 보안이 뒤처짐on-prem 보안 vs 클라우드 보안ApI 기반 웹서비스로 제공되는 클라우드API 기반 접근 제어 (iam) 퍼블릭하게 열려있는 웹사이트 기반 특성상 워크로드 가장 깊은곳 침범네트워크기반으로 되는 on-premAPI 기반 탐지 및 자동화 (api추적용이) 어떤 기능이 필요한지 파악하고 서비스들을 활용 빌딩블록을 만든다"
+  },
+  
+  {
+    "title": "aws 보안 \\#1",
+    "url": "/posts/aws%EB%B3%B4%EC%95%88/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-09-28 11:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "클라우드상에서의 보안aws 보안 overview aws 보안의 필요성과 고려사항aws 접근제어 iam을 중심으로 한 aws wjqrmswpdjaws 네트워크 보안 다양한 네트워크 계층에서 고민해야하는 aws보안aws 보안 탐지 및 자동화 aws 계정 전반에 대한 보안 위협 탐지 및 자동화 전략DevSecOps on aws DevOps영역에서의 보안클라...",
+    "content": "클라우드상에서의 보안aws 보안 overview aws 보안의 필요성과 고려사항aws 접근제어 iam을 중심으로 한 aws wjqrmswpdjaws 네트워크 보안 다양한 네트워크 계층에서 고민해야하는 aws보안aws 보안 탐지 및 자동화 aws 계정 전반에 대한 보안 위협 탐지 및 자동화 전략DevSecOps on aws DevOps영역에서의 보안클라우드 보안과 온프렘 보안의 차이클라우드 상에서의 보안 고려사항클라우드 보안 빌딩 블록보안아키텍처의 구성devops 보안의 무지 무시 하면 위험"
+  },
+  
+  {
+    "title": "모니터링 알람과 자동화#3",
+    "url": "/posts/monitoring3/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-09-27 12:11:11 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Datadog Metric Querymetrics Explorer를 통해 Dashborad나 Widget을 만들기 전, metric을 조회해 볼 수 있는 기능이 있음Metric Summary 탭에서 지원하는 Metric 조회 가능시간 단위, 찾는 Metric 조건, 집계 함수 등을 수정하면서 Metric 확인APM Based Metric, Log Ba...",
+    "content": "Datadog Metric Querymetrics Explorer를 통해 Dashborad나 Widget을 만들기 전, metric을 조회해 볼 수 있는 기능이 있음Metric Summary 탭에서 지원하는 Metric 조회 가능시간 단위, 찾는 Metric 조건, 집계 함수 등을 수정하면서 Metric 확인APM Based Metric, Log Based Metric, Custom Metric도 조회Datadog APIdatadog에서 지원하는 대부분의 기능을 API로 제공java, python, typescript 등 언어에 대한 SDK를 공식적으로 지원해줌Datadog에서 발급하는 API Key, APP Key를 활용하여 API 사용짧은 주기로 호출 하는 경우, Rate limit이 걸릴 수 있음 API 별로 다름Slack으로 Datadog Metric 조회"
+  },
+  
+  {
+    "title": "S3 beckend",
+    "url": "/posts/s3-key/",
+    "categories": "Blogging",
+    "tags": "s3",
+    "date": "2023-09-26 12:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "s3Terraform generates key names that include the values of the bucket and key variables.This backend also supports state locking and consistency checking via Dynamo DB, which can be enabled by sett...",
+    "content": "s3Terraform generates key names that include the values of the bucket and key variables.This backend also supports state locking and consistency checking via Dynamo DB, which can be enabled by setting the dynamodb_table field to an existing DynamoDB table name.terraform {  required_version = \"&gt;= 1.0.0\"  backend \"s3\" {    bucket         = s3.bucket    key            = s3.key    region         = \"ap-northeast-2\"    encrypt        = true    dynamodb_table = \"terraform-lock\"  }}  tip: there  Note:"
+  },
+  
+  {
+    "title": "모니터링 알람과 자동화#2",
+    "url": "/posts/monitoring2/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-09-25 12:11:11 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "datadog을 활용해서alert모니터링 하는 특정 metric의 이상 현상을 알림으로 받기 위한 기능예를들어 급격히 증가하는 HTTP 400/500 Error와 db cpu metric 값을 올라갔을때 엮어 상황 유추 가능특정 조건을 걸어 단일 alert으로 생성 여러 단일 alert으로 복합 조건인 alert을 생성 가능어떤 상황이 발생했는지를 알...",
+    "content": "datadog을 활용해서alert모니터링 하는 특정 metric의 이상 현상을 알림으로 받기 위한 기능예를들어 급격히 증가하는 HTTP 400/500 Error와 db cpu metric 값을 올라갔을때 엮어 상황 유추 가능특정 조건을 걸어 단일 alert으로 생성 여러 단일 alert으로 복합 조건인 alert을 생성 가능어떤 상황이 발생했는지를 알림 채널(email, slack, pageduty등)을 통해 알림을 받음이를 통해 예외 상황 대응을 빠르게 할 수 있음incident서비스 장애나 인프라 장애가 발생했을때 단순히 문제를 해결하는 것이 다가 아님다시 발생하지 않도록 예방책과 왜 문제가 일어났는지에 대한 분석이 필요monitor, slo, metrics들을 종합적으로 분석이를 incident화 시켜서 관리incident가 발생 시, 필요한 인원에 대한 slack channel, alert 생성당시 상황에 해당하는 metric 그래프, warning과 monitor의 alert을 시간 순으로 나열postmoterm(부검,회고)으로 이어지는 구조로 구성slosli를 이용해 목표로 하는 서비스 수준 목표(SLO)까지 지킬 수 있도록 지정SLO는 SRE의 핵심 같은 수준의 서비스를 사용자에게 제공하기 위한 목표값앞선 모니터 기반 SLO와 메트릭 기반 SLO, Error Budget, Burn Rate를 설정SLO설정을 통해서는 Metric으로 사용가능 Dashboard로 사용이를 하나의 Metric으로 Monitor를 활용해 설정한 값 중 특정 조건이 해당되면 Alert를 발생monitor 알람 slack으로 받기"
+  },
+  
+  {
+    "title": "모니터링 알람과 자동화#1",
+    "url": "/posts/monitoring1/",
+    "categories": "Blogging",
+    "tags": "",
+    "date": "2023-09-24 12:11:11 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "대부분의 모니터링 솔루션에는 Alert 기능이 존재모니터링 대상에서 일어나는 여러 사건을 매번 확인할수없음따라서 이를 rule 혹은 policy로 만들어서 사용즉, 특정 조건에 만족하게 되면 어떤 현상이 일어난 것으로 인지대응할 수 있도록 알람Email, SMS, SNS 등을 활용cloudwatch는 모니터링이 되는 대부분 서비스에 대해 알람 제공lb...",
+    "content": "대부분의 모니터링 솔루션에는 Alert 기능이 존재모니터링 대상에서 일어나는 여러 사건을 매번 확인할수없음따라서 이를 rule 혹은 policy로 만들어서 사용즉, 특정 조건에 만족하게 되면 어떤 현상이 일어난 것으로 인지대응할 수 있도록 알람Email, SMS, SNS 등을 활용cloudwatch는 모니터링이 되는 대부분 서비스에 대해 알람 제공lb나 ec2 status, billing 등 다양한 지표를 알람 지표로 제공복합 조건에 대한 알람도 제공발생한 알람은 sns의 특정 topic으로 publish 이를 가져가서 사용하는 곳에서 보낼 대상으로 구현이 필요grafan와 연결된 모둔 data source에 대해 알람 지표로 제공연결된 데이터 소스에 따라 지표를 다르게 평가 prometheus는 PromQL, MySQLdms SQL 등으로 지표를 평가외부의 AlertManager를 Datasource로 사용 모니터링 및 Alert 발생을 한곳에서 관리최근에는 Enterprise 버전에서만 제공되는 기능도 추가모니터링 대상이 되는 Application에 Rule을 적용해서 알람제공preset으로 제공되는 rule에 대해서만 가능 발생한 alarm을 Db에 저장알람 대상은 기본적으로 email과 sms(interface제공), webhook 사용가능다른 모니터링 tool에 비해 많은 기능을 지원하지 않음"
   },
   
   {
@@ -30,8 +489,8 @@
 
 
     
-    "snippet": "sumo logic integration과 AWS infrastructure monitoring사용자 AWS계정에 sumo logic에서 사용할 iam role 생성policy document{  \"Version\": \"2012-10-17\",  \"Statement\": [    {      \"Action\": [        \"cloudwatch:ListM...",
-    "content": "sumo logic integration과 AWS infrastructure monitoring사용자 AWS계정에 sumo logic에서 사용할 iam role 생성policy document{  \"Version\": \"2012-10-17\",  \"Statement\": [    {      \"Action\": [        \"cloudwatch:ListMetrics\",        \"cloudwatch:GetMetricStatistics\",        \"ec2:DescribeeInstance\",        \"tag:GetResource\"      ],      \"Effect\": \"Allow\",      \"Resource\": \"*\"    }  ]}sumo logic에서는 해당 iam role을 사용하여 지정된 서비스 metrics 수집sumo logic installed collectors와 application log monitoringdocker, ec2 환경(linux)에 installed collector 설치application의 log를 sumo logic으로 전달, 대시보드에서 조회"
+    "snippet": "sumo logic integration과 AWS infrastructure monitoring사용자 AWS계정에 sumo logic에서 사용할 iam role 생성Role-based access (recommended)key accesskey access policy document{  \"Version\": \"2012-10-17\",  \"Statemen...",
+    "content": "sumo logic integration과 AWS infrastructure monitoring사용자 AWS계정에 sumo logic에서 사용할 iam role 생성Role-based access (recommended)key accesskey access policy document{  \"Version\": \"2012-10-17\",  \"Statement\": [    {      \"Action\": [        \"cloudwatch:ListMetrics\",        \"cloudwatch:GetMetricStatistics\",        \"ec2:DescribeeInstance\",        \"tag:GetResource\"      ],      \"Effect\": \"Allow\",      \"Resource\": \"*\"    }  ]}sumo logic에서는 해당 iam role을 사용하여 지정된 서비스 metrics 수집sumo logic installed collectors와 application log monitoringdocker, ec2 환경(linux)에 installed collector 설치application의 log를 sumo logic으로 전달, 대시보드에서 조회"
   },
   
   {

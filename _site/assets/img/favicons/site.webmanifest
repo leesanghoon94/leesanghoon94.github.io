@@ -1,8 +1,8 @@
 
 
 {
-  "name": "LSH",
-  "short_name": "LSH",
+  "name": "blog",
+  "short_name": "blog",
   "description": "A minimal, responsive and feature-rich Jekyll theme for technical writing.",
   "icons": [
     {
