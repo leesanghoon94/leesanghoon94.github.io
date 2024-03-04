@@ -8,7 +8,7 @@ tags:
 
 ### ER_NOT_SUPPORTED_AUTH_MODE
 
-### 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+##### 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
 
 mysql의 default_authentication_plugin은 mysql_native_password였다
 하지만 mysql 8 부터 보안이 강화된 caching_sha2_password로 변경되면서  
