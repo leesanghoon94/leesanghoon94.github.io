@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 # img_cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/127801771.jpeg
+avatar: /assets/img/127801771.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -198,7 +198,7 @@ jekyll_compose:
   auto_open: true
   default_front_matter:
     posts:
-      categories:
+      categories: [Blogging]
       tags:
-      date:
+      date: auto
       title:

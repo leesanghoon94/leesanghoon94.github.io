@@ -275,7 +275,7 @@
     <a href="/" id="avatar" class="rounded-circle">
       
         
-        <img src="/assets/img/avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+        <img src="/assets/img/127801771.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
       
     </a>
 
@@ -582,151 +582,6 @@
 
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
-  
-    <article class="card-wrapper card">
-      <a href="/posts/aws-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B42/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">AWS 접근제어#3 IAM Policy</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                AWS IAM policy의 JSON 구조
-
-{
-    &quot;version&quot;: &quot;2012-10-17&quot;,
-    &quot;Statement&quot;: [
-        {
-            &quot;Effect&quot;: &quot;Allow(허용) 또는 Deny(차단)&quot;,
-            &quot;Action&quot;: [
-                ... 어떤 행위를?
-            ]...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1696302671"
-  data-df="ll"
-  
->
-  Oct  3, 2023
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Blogging
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/aws-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">AWS 접근제어#1</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                2 aws iam의 인증과 인가
-
-identity: iam user의인증
-
-credential
-장기 iam user, root, 일반적으로 장기는 취약
-임시
-iam 사용자에게는 상시 자격증명(acceess key/secret access key페어)이 부여
-rest api, cli, sdk등을 통해 활용
-
-identity: iam role의 인증(인스...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1696212000"
-  data-df="ll"
-  
->
-  Oct  2, 2023
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Blogging
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
   
     <article class="card-wrapper card">
       <a href="/posts/aws-iam/" class="post-preview row g-0 flex-md-row-reverse">
@@ -1289,6 +1144,151 @@ cloudwatch는 모니터링이 되는 대부분 서비스에 대해...
       </a>
     </article>
   
+    <article class="card-wrapper card">
+      <a href="/posts/SaaS-04/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">SaaS를 활용한 모니터링(Sumo Logic)#2</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                sumo logic integration과 AWS infrastructure monitoring
+
+사용자 AWS계정에 sumo logic에서 사용할 iam role 생성
+Role-based access (recommended)
+key access
+
+key access policy document
+
+{
+  &quot;Version&quot;: &quot;2012-10-17&quot;,
+ ...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1695352271"
+  data-df="ll"
+  
+>
+  Sep 22, 2023
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      Blogging,
+                      devops
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/SaaS-03/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">SaaS를 활용한 모니터링(Sumo Logic)#1</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                Sumo Logic
+
+클라우드 기반의 데이터 모니터링 및 분석 SaaS 플랫폼
+
+
+  인프라, 클라우드, 어플리케이션, 로그 및 CI/CD, 보안 모니터링 제공
+  SIM(Security Information Monitoring), SEM(Security Event Management)을 지원하는 SIEM(보안 정보 및 이벤트 관리) 솔루션 제공
+  ...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1695265871"
+  data-df="ll"
+  
+>
+  Sep 21, 2023
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      Blogging,
+                      devops
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
 </div>
 <!-- #post-list -->
 
@@ -1383,11 +1383,47 @@ cloudwatch는 모니터링이 되는 대부분 서비스에 대해...
         </li>
       
     
+      
+      
+      
+      
+      
+
+      
+
+      
+        <!-- hide number -->
+        
+          <li class="page-item disabled">
+            <span class="page-link">...</span>
+          </li>
+          
+        
+      
+    
+      
+      
+      
+      
+      
+
+      
+
+      
+        <!-- show number -->
+        <li class="page-item ">
+          <a
+            class="page-link"
+            href="/page6"
+          >6</a>
+        </li>
+      
+    
 
     <!-- mobile pagination -->
     <li class="page-index align-middle">
       <span>3</span>
-      <span class="text-muted">/ 4</span>
+      <span class="text-muted">/ 6</span>
     </li>
 
     <!-- right arrow -->
@@ -1434,35 +1470,35 @@ cloudwatch는 모니터링이 되는 대부분 서비스에 대해...
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/text-and-typography/">Text and Typography</a>
+          <a href="/posts/aws-acm-%EB%AC%B4%EA%B8%B0%EC%A4%91/">aws ACM 무한 대기중</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/multer/">multer를 사용해 이미지 업로드하기</a>
+          <a href="/posts/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC/">자바스크립트 동작원리</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/api-%ED%85%8C%EC%8A%A4%ED%8A%B8/">Are HTTP headers case-sensitive?</a>
+          <a href="/posts/2023-05-07-markdown/">마크다운 markdown 작성법</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/aws-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%883/">Aws 네트워크 보안3</a>
+          <a href="/posts/2023-05-08/">두가지 패턴의 프로세스 간 통신 (IPC)</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ddos-%EB%B0%A9%EC%96%B4/">Ddos 방어</a>
+          <a href="/posts/2023-05-09/">대체 마이크로 서비스가 뭔가?</a>
         </li>
       
     </ul>
@@ -1629,53 +1665,6 @@ cloudwatch는 모니터링이 되는 대부분 서비스에 대해...
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
 
 
   <section>
@@ -1689,19 +1678,16 @@ cloudwatch는 모니터링이 되는 대부분 서비스에 대해...
         <a class="post-tag btn btn-outline-primary" href="/tags/sumo-logic/">Sumo Logic</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mac/">mac</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/msa/">msa</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/s3/">s3</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/terraform/">Terraform</a>
       
     </div>
   </section>
@@ -1911,53 +1897,6 @@ cloudwatch는 모니터링이 되는 대부분 서비스에 대해...
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
 
 
   <section>
@@ -1971,19 +1910,16 @@ cloudwatch는 모니터링이 되는 대부분 서비스에 대해...
         <a class="post-tag btn btn-outline-primary" href="/tags/sumo-logic/">Sumo Logic</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mac/">mac</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/msa/">msa</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/s3/">s3</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/terraform/">Terraform</a>
       
     </div>
   </section>

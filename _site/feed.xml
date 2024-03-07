@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>blog</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-02-08T15:38:20+09:00</updated>
+  <updated>2024-03-08T03:09:45+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%98-%ED%8A%B9%EC%A7%95/" rel="alternate" type="text/html" title="클라우드 서비스" />
     <published>2023-11-02T12:11:11+09:00</published>
   
-    <updated>2023-11-02T12:11:11+09:00</updated>
+    <updated>2024-03-05T07:21:06+09:00</updated>
   
     <id>http://localhost:4000/posts/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%98-%ED%8A%B9%EC%A7%95/</id>
     <content src="http://localhost:4000/posts/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%98-%ED%8A%B9%EC%A7%95/" />
@@ -182,9 +182,9 @@ mysql 모듈이cha2 방식을 지원하지 못해 node.js에서 db 연동이 안
   <entry>
     <title>Cidr</title>
     <link href="http://localhost:4000/posts/cidr/" rel="alternate" type="text/html" title="Cidr" />
-    <published>2023-10-19T00:00:00+09:00</published>
+    <published>2023-10-19T01:34:00+09:00</published>
   
-    <updated>2023-10-19T00:00:00+09:00</updated>
+    <updated>2024-03-05T07:21:06+09:00</updated>
   
     <id>http://localhost:4000/posts/cidr/</id>
     <content src="http://localhost:4000/posts/cidr/" />
@@ -193,6 +193,8 @@ mysql 모듈이cha2 방식을 지원하지 못해 node.js에서 db 연동이 안
     </author>
 
   
+    
+    <category term="Blogging" />
     
   
 
@@ -205,6 +207,8 @@ mysql 모듈이cha2 방식을 지원하지 못해 node.js에서 db 연동이 안
 
 
       #
+
+아이피 주소에서 사용할 수 없는 주소가 두가지가 존재한다
 
     </summary>
   

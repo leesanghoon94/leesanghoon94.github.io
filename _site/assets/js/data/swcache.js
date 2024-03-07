@@ -23,12 +23,12 @@ const resource = [
   /* --- Favicons & compressed JS --- */
   
   
+    '/assets/img/favicons/favicon-16x16.png',
     '/assets/img/favicons/favicon-32x32.png',
+    '/assets/img/favicons/favicon-96x96.png',
     '/assets/img/favicons/favicon.ico',
     '/assets/img/favicons/favicon1-32x32.png',
     '/assets/img/favicons/favicon1.ico',
-    '/assets/img/favicons/mstile-150x150.png',
-    '/assets/img/favicons/my-favicon.ico',
     '/assets/img/favicons/safari-pinned-tab.svg',
     '/assets/js/dist/categories.min.js',
     '/assets/js/dist/commons.min.js',
