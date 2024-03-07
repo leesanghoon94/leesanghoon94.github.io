@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 모니터링 알람과 자동화#1
-date: 2023-09-24 11:11:11 +0800
 categories: [Blogging]
 tags:
 ---

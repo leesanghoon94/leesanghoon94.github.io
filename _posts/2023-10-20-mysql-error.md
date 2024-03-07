@@ -21,4 +21,4 @@ mysql 모듈이cha2 방식을 지원하지 못해 node.js에서 db 연동이 안
 2. default_authentication_plugin(기본 인증 플러그인)을 mysql_native_password으로 다운그레이드 한다.
 
 플러그인을 바꿔 준다
-![image](./images/스크린샷1.png)
+![image](/assets/img/screenshot/스크린샷1.png)

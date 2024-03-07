@@ -1,12 +1,12 @@
 ---
 layout: post
-title:
+title: terrafrom user_data
 date: 2023-8-8 11:11:11 +0800
 categories: [Blogging]
 tags: [Terraform]
 ---
 
-- <mark>**NOTE**:</mark> For accounts created after May 31, 2023, the EC2 console only supports creating Auto Scaling groups with launch templates. Creating Auto Scaling groups with launch configurations is not recommended but still available via the CLI and API until December 31, 2023.
+> - <mark>**NOTE**:</mark> For accounts created after May 31, 2023, the EC2 console only supports creating Auto Scaling groups with launch templates. Creating Auto Scaling groups with launch configurations is not recommended but still available via the CLI and API until December 31, 2023.
 
 테라폼으로 오토스케일 만들었는데  
 launch configurations가 더이상 추천되지 않는다고 해서  
