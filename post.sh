@@ -11,4 +11,4 @@ if [ -z "$post_title" ]; then
 fi
 
 # 입력 받은 글 제목을 사용하여 bundle exec jekyll post 명령 실행
-bundle exec jekyll compose "$post_title"
+bundle exec jekyll post "$post_title"

@@ -198,7 +198,7 @@ jekyll_compose:
   auto_open: true
   default_front_matter:
     posts:
-      categories: [Blogging]
-      tags:
-      date: auto
       title:
+      date:
+      categories:
+      tags:
