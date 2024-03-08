@@ -1,16 +1,8 @@
 ---
 title: SaaS를 활용한 모니터링(Datadog)#1
-author: cotes
 date: 2023-8-22 11:33:00 +0800
 categories: [Blogging, Demo]
 tags: [getting started]
-pin: true
-math: true
-mermaid: true
-image:
-  path:
-  lqip:
-  alt:
 ---
 
 1 SaaS를 활용한 모니터링(Datadog)#1

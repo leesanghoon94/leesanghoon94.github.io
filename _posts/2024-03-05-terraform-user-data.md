@@ -1,7 +1,6 @@
 ---
 layout: post
 title: terrafrom user_data
-date: 2023-8-8 11:11:11 +0800
 categories: [Blogging]
 tags: [Terraform]
 ---
