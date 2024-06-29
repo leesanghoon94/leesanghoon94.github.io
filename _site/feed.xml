@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-06-30T04:05:19+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Klise Theme</title><subtitle>He&apos;s writing in Bahasa about web technology and experience as a journal  for documentation things that he learned, meet him &lt;a href=&quot;https://github.com/piharpi&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;@github&lt;/a&gt;.</subtitle><author><name>Jekyll Klisé</name><email>your-email@email.com</email></author><entry><title type="html">기am</title><link href="http://localhost:4000/%EA%B8%B0am/" rel="alternate" type="text/html" title="기am" /><published>2024-06-30T03:32:28+09:00</published><updated>2024-06-30T03:32:28+09:00</updated><id>http://localhost:4000/%EA%B8%B0am</id><content type="html" xml:base="http://localhost:4000/%EA%B8%B0am/"><![CDATA[<h2 id="인증서의-상태가">인증서의 상태가..?!</h2>
+
+<p><img src="/assets/img/screenshot/image-2.png" alt="Image Alt text" /></p>
+
+<ol>
+  <li>click 도메인을 사고 클라우드프론트 배포까지 하고 클린업할때 발급받은 인증서를 지웠다가 다시 클라우드 배포 할 일이 생겨서 다시 인증을 요청한 상태</li>
+  <li><strong>클린업을 하면서 vpc 호스팅 영역도 같이 지운상태</strong></li>
+</ol>
+
+<hr />
+
+<h2 id="amazon-route53에서-퍼블릭-호스팅-영역에-대해-생성하는-ns-및-soa-레코드"><strong>Amazon Route 53에서 퍼블릭 호스팅 영역에 대해 생성하는 NS 및 SOA 레코드</strong></h2>
+
+<p>Amazon Route 53는 생성하는 각 퍼블릭 호스팅 영역에 대해 NS(이름 서버) 레코드 및 SOA(권한 시작) 레코드를 자동으로 생성합니다. 이러한 레코드는 거의 변경할 필요가 없습니다.
+https://docs.aws.amazon.com/ko_kr/Route53/latest/DeveloperGuide/SOA-NSrecords.html</p>
+
+<h2 id="ns이름-서버-레코드"><strong>NS(이름 서버) 레코드</strong></h2>
+
+<p>Amazon Route 53는 호스팅 영역과 이름이 동일한 NS(이름 서버) 레코드를 자동으로 생성하고, 호스팅 영역에 대한 신뢰할 수 있는 이름 서버 네 개를 나열합니다. 드문 경우를 제외하고 이 레코드에서 이름 서버를 추가, 변경 또는 삭제하지 않는 것이 좋습니다.</p>
+
+<p>다음 예는 Route 53 이름 서버의 이름 형식을 보여줍니다(이것은 예시일 뿐이므로 등록자의 이름 서버 레코드를 업데이트할 때 사용하면 안 됩니다).</p>
+
+<ul>
+  <li><em>ns-2048.awsdns-64.com</em></li>
+  <li><em>ns-2049.awsdns-65.net</em></li>
+  <li><em>ns-2050.awsdns-66.org</em></li>
+  <li><em>ns-2051.awsdns-67.co.uk</em></li>
+</ul>
+
+<p>vpc 지웠다 다시 생성했으므로 전에 만들었던 ns 주소가 달라졌기에 검증이 무한 대기중이라 생각
+<img src="/assets/img/screenshot/image-4.png" alt="Image Alt text" />
+<img src="/assets/img/screenshot/image-3.png" alt="Image Alt text" />
+<strong>주소 똑같이 바꿔줌</strong>
+<img src="/assets/img/screenshot/image-5.png" alt="Image Alt text" />
+<strong>검증 대기</strong></p>
+
+<p>aws 호스팅 영역을 지웠다가 다시 생성했던 사람은 ns의 값이 바뀐다
+바뀐 ns 값을 edit 해주면 acm 검증이 바로 될줄알았는데… 안돼서 도메인 하나 샀다;;</p>
+
+<h5 id="resources">Resources</h5>
+
+<ul>
+  <li><a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork">Syncing a fork</a></li>
+  <li><a href="https://rick.cogley.info/post/update-your-forked-repository-directly-on-github/#top">Update your fork directly on Github</a></li>
+</ul>]]></content><author><name>Jekyll Klisé</name><email>your-email@email.com</email></author><summary type="html"><![CDATA[인증서의 상태가..?!]]></summary></entry><entry><title type="html">자바스크립트동작원리</title><link href="http://localhost:4000/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC/" rel="alternate" type="text/html" title="자바스크립트동작원리" /><published>2024-06-30T03:29:24+09:00</published><updated>2024-06-30T03:29:24+09:00</updated><id>http://localhost:4000/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC</id><content type="html" xml:base="http://localhost:4000/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC/"><![CDATA[<p>코드 잘짜고 싶으면 문법말고 브라우저 동작원리도 …</p>
+
+<p><code class="language-plaintext highlighter-rouge">⚠️ 왜 .js, .css 을 해석해주는게 브라우저 이니까</code></p>
+
+<blockquote>
+  <p class="prompt-info">✓ means keep, ✗ means delete.</p>
+</blockquote>
+
+<pre><code class="language-python.py">print(1+1)
+time.sleep(1)
+print(2+2)
+</code></pre>
+
+<p>한줄 한줄 코드 실행해준다</p>
+
+<pre><code class="language-.js">console(1+1)
+setTimeout(function(){ console.log(2+2) }, 1000)
+console.log(3+3)
+</code></pre>
+
+<p><img width="400" alt="스크린샷 2023-07-06 오후 11 33 48" src="https://github.com/leesanghoon94/leesanghoon94.github.io/assets/127801771/403f3bf4-2c11-465d-bb4c-89f8322204ae" /></p>
+
+<p><img width="400" alt="스크린샷 2023-07-06 오후 11 35 43" src="https://github.com/leesanghoon94/leesanghoon94.github.io/assets/127801771/4b7bed8b-c78d-4ec1-a982-ed2f9372e049" /></p>
+
+<p>&lt; 자바스크립트는 병렬처리가 안된다…
+바로 실행이 안되는 
+setTimeoutdms는 Queue 대기 &gt;</p>
+
+<p><img width="400" alt="스크린샷 2023-07-06 오후 11 34 50" src="https://github.com/leesanghoon94/leesanghoon94.github.io/assets/127801771/fd4eaa6e-1644-4a53-97ff-d503945ac91f" /></p>
+
+<p>&lt; 자바스크립트가 queue에 보내는 코드들 &gt;</p>]]></content><author><name>Jekyll Klisé</name><email>your-email@email.com</email></author><category term="javascript" /><category term="javascript" /><summary type="html"><![CDATA[코드 잘짜고 싶으면 문법말고 브라우저 동작원리도 …]]></summary></entry><entry><title type="html">깃태그</title><link href="http://localhost:4000/%EA%B9%83%ED%83%9C%EA%B7%B8/" rel="alternate" type="text/html" title="깃태그" /><published>2024-06-30T03:28:36+09:00</published><updated>2024-06-30T03:28:36+09:00</updated><id>http://localhost:4000/%EA%B9%83%ED%83%9C%EA%B7%B8</id><content type="html" xml:base="http://localhost:4000/%EA%B9%83%ED%83%9C%EA%B7%B8/"><![CDATA[<h2 id="깃태그">깃태그</h2>
+
+<p>git tag v0.0.0-local
+git push origin v0.0.0-local</p>
+
+<p>git log –oneline</p>
+
+<h2 id="삭제">삭제</h2>
+
+<p>git push origin :v0.0.0-local
+git tag -d v0.0.0-local</p>]]></content><author><name>Jekyll Klisé</name><email>your-email@email.com</email></author><category term="git" /><category term="git" /><summary type="html"><![CDATA[깃태그]]></summary></entry><entry><title type="html">쉘스크립트변수명령어</title><link href="http://localhost:4000/%EC%89%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%B3%80%EC%88%98%EB%AA%85%EB%A0%B9%EC%96%B4/" rel="alternate" type="text/html" title="쉘스크립트변수명령어" /><published>2024-06-30T03:27:51+09:00</published><updated>2024-06-30T03:27:51+09:00</updated><id>http://localhost:4000/%EC%89%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%B3%80%EC%88%98%EB%AA%85%EB%A0%B9%EC%96%B4</id><content type="html" xml:base="http://localhost:4000/%EC%89%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%B3%80%EC%88%98%EB%AA%85%EB%A0%B9%EC%96%B4/"><![CDATA[<p>$()와 ${}는 쉘 스크립트에서 변수나 명령어를 사용하는 데에 있어서 차이가 있습니다.</p>
+
+<ol>
+  <li>
+    <p><strong>$() (Command Substitution):</strong></p>
+
+    <ul>
+      <li>
+        <p>명령어를 실행하고 그 결과를 변수에 할당하거나 출력으로 사용할 때 사용됩니다.</p>
+      </li>
+      <li>
+        <p>예를 들어:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bashCopy code
+result=$(ls)
+echo "Files: $result"
+
+</code></pre></div>        </div>
+
+        <p>이 예제에서</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(ls)
+</code></pre></div>        </div>
+
+        <p>는 현재 디렉터리의 파일 목록을 실행하고 그 결과를</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result
+</code></pre></div>        </div>
+
+        <p>변수에 할당합니다.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>${} (Parameter Expansion):</strong></p>
+
+    <ul>
+      <li>
+        <p>변수나 매개변수를 참조할 때 사용됩니다.</p>
+      </li>
+      <li>
+        <p>예를 들어:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bashCopy code
+name="John"
+echo "Hello, ${name}!"
+
+</code></pre></div>        </div>
+
+        <p>이 예제에서</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>${name}
+</code></pre></div>        </div>
+
+        <p>은 변수</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name
+</code></pre></div>        </div>
+
+        <p>의 값을 참조합니다.</p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>차이점은 다음과 같습니다:</p>
+
+<ul>
+  <li><strong>스코프:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$()</code>는 명령어를 실행하고 그 결과를 변수에 할당하거나 다른 명령어에서 사용할 때 주로 사용됩니다.</li>
+      <li><code class="language-plaintext highlighter-rouge">${}</code>는 변수를 참조하거나 매개변수를 확장할 때 사용됩니다.</li>
+    </ul>
+  </li>
+  <li><strong>문자열 내 변수 사용:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$()</code>는 주로 명령어의 결과를 변수에 저장할 때 사용되며, 문자열 내에서 사용할 때는 필요하지 않습니다.</li>
+      <li><code class="language-plaintext highlighter-rouge">${}</code>는 변수나 매개변수를 문자열 내에서 명시적으로 참조할 때 사용됩니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>둘 다 쉘 스크립트에서 자주 사용되는 구문이며, 특히 변수나 명령어를 다룰 때 유용합니다.</p>
+
+<hr />
+
+<p>먼저, <code class="language-plaintext highlighter-rouge">whois</code>와 <code class="language-plaintext highlighter-rouge">whatis</code>는 서로 다른 목적과 용도를 가진 두 가지 명령어입니다.</p>
+
+<ol>
+  <li>
+    <p><strong>whois:</strong></p>
+
+    <ul>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">whois</code>는 인터넷 도메인 및 IP 주소 등과 관련된 등록 정보를 조회하는 데 사용됩니다.</p>
+      </li>
+      <li>
+        <p>주로 도메인 등록 정보를 확인하거나 IP 주소의 소유자 정보를 확인하는 데 사용됩니다.</p>
+      </li>
+      <li>
+        <p>예를 들어:</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whois example.com
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>이 명령은 <code class="language-plaintext highlighter-rouge">example.com</code> 도메인의 등록 정보를 조회합니다.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>whatis:</strong></p>
+
+    <ul>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">whatis</code>는 명령어나 매뉴얼 페이지에 대한 간단한 설명을 제공하는 데 사용됩니다.</p>
+      </li>
+      <li>
+        <p>명령어의 역할이나 사용법에 대한 간단한 설명을 제공하여 사용자가 빠르게 이해할 수 있도록 돕습니다.</p>
+      </li>
+      <li>
+        <p>예를 들어:</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whatis <span class="nb">ls</span>
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>이 명령은 <code class="language-plaintext highlighter-rouge">ls</code> 명령어에 대한 간단한 설명을 출력합니다.</p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>따라서, <code class="language-plaintext highlighter-rouge">whois</code>는 인터넷 등록 정보를 조회하는 데 사용되고, <code class="language-plaintext highlighter-rouge">whatis</code>는 명령어나 매뉴얼 페이지의 간단한 설명을 제공하는 데 사용됩니다. 둘 다 유용한 명령어이며, 각각의 목적에 맞게 사용됩니다.</p>]]></content><author><name>Jekyll Klisé</name><email>your-email@email.com</email></author><summary type="html"><![CDATA[$()와 ${}는 쉘 스크립트에서 변수나 명령어를 사용하는 데에 있어서 차이가 있습니다.]]></summary></entry></feed>

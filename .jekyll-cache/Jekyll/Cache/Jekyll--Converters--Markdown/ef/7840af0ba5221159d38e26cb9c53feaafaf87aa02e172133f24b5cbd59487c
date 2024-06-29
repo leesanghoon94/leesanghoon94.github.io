@@ -1,0 +1,12 @@
+I"�<h2 id="깃태그">깃태그</h2>
+
+<p>git tag v0.0.0-local
+git push origin v0.0.0-local</p>
+
+<p>git log –oneline</p>
+
+<h2 id="삭제">삭제</h2>
+
+<p>git push origin :v0.0.0-local
+git tag -d v0.0.0-local</p>
+:ET

@@ -1,0 +1,135 @@
+I"�<p>$()와 ${}는 쉘 스크립트에서 변수나 명령어를 사용하는 데에 있어서 차이가 있습니다.</p>
+
+<ol>
+  <li>
+    <p><strong>$() (Command Substitution):</strong></p>
+
+    <ul>
+      <li>
+        <p>명령어를 실행하고 그 결과를 변수에 할당하거나 출력으로 사용할 때 사용됩니다.</p>
+      </li>
+      <li>
+        <p>예를 들어:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bashCopy code
+result=$(ls)
+echo "Files: $result"
+
+</code></pre></div>        </div>
+
+        <p>이 예제에서</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(ls)
+</code></pre></div>        </div>
+
+        <p>는 현재 디렉터리의 파일 목록을 실행하고 그 결과를</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result
+</code></pre></div>        </div>
+
+        <p>변수에 할당합니다.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>${} (Parameter Expansion):</strong></p>
+
+    <ul>
+      <li>
+        <p>변수나 매개변수를 참조할 때 사용됩니다.</p>
+      </li>
+      <li>
+        <p>예를 들어:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bashCopy code
+name="John"
+echo "Hello, ${name}!"
+
+</code></pre></div>        </div>
+
+        <p>이 예제에서</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>${name}
+</code></pre></div>        </div>
+
+        <p>은 변수</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name
+</code></pre></div>        </div>
+
+        <p>의 값을 참조합니다.</p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>차이점은 다음과 같습니다:</p>
+
+<ul>
+  <li><strong>스코프:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$()</code>는 명령어를 실행하고 그 결과를 변수에 할당하거나 다른 명령어에서 사용할 때 주로 사용됩니다.</li>
+      <li><code class="language-plaintext highlighter-rouge">${}</code>는 변수를 참조하거나 매개변수를 확장할 때 사용됩니다.</li>
+    </ul>
+  </li>
+  <li><strong>문자열 내 변수 사용:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$()</code>는 주로 명령어의 결과를 변수에 저장할 때 사용되며, 문자열 내에서 사용할 때는 필요하지 않습니다.</li>
+      <li><code class="language-plaintext highlighter-rouge">${}</code>는 변수나 매개변수를 문자열 내에서 명시적으로 참조할 때 사용됩니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>둘 다 쉘 스크립트에서 자주 사용되는 구문이며, 특히 변수나 명령어를 다룰 때 유용합니다.</p>
+
+<hr />
+
+<p>먼저, <code class="language-plaintext highlighter-rouge">whois</code>와 <code class="language-plaintext highlighter-rouge">whatis</code>는 서로 다른 목적과 용도를 가진 두 가지 명령어입니다.</p>
+
+<ol>
+  <li>
+    <p><strong>whois:</strong></p>
+
+    <ul>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">whois</code>는 인터넷 도메인 및 IP 주소 등과 관련된 등록 정보를 조회하는 데 사용됩니다.</p>
+      </li>
+      <li>
+        <p>주로 도메인 등록 정보를 확인하거나 IP 주소의 소유자 정보를 확인하는 데 사용됩니다.</p>
+      </li>
+      <li>
+        <p>예를 들어:</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whois example.com
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>이 명령은 <code class="language-plaintext highlighter-rouge">example.com</code> 도메인의 등록 정보를 조회합니다.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>whatis:</strong></p>
+
+    <ul>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">whatis</code>는 명령어나 매뉴얼 페이지에 대한 간단한 설명을 제공하는 데 사용됩니다.</p>
+      </li>
+      <li>
+        <p>명령어의 역할이나 사용법에 대한 간단한 설명을 제공하여 사용자가 빠르게 이해할 수 있도록 돕습니다.</p>
+      </li>
+      <li>
+        <p>예를 들어:</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whatis <span class="nb">ls</span>
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>이 명령은 <code class="language-plaintext highlighter-rouge">ls</code> 명령어에 대한 간단한 설명을 출력합니다.</p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>따라서, <code class="language-plaintext highlighter-rouge">whois</code>는 인터넷 등록 정보를 조회하는 데 사용되고, <code class="language-plaintext highlighter-rouge">whatis</code>는 명령어나 매뉴얼 페이지의 간단한 설명을 제공하는 데 사용됩니다. 둘 다 유용한 명령어이며, 각각의 목적에 맞게 사용됩니다.</p>
+:ET
