@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # 블로그의 _posts 디렉토리 경로 설정
 POSTS_DIR="_posts"
 
@@ -9,9 +8,15 @@ CURRENT_DATE=$(date +"%Y-%m-%d")
 
 # 사용자로부터 포스트 제목 입력받기
 read -p "포스트 제목을 입력하세요: " TITLE
-mkdir -p _posts/$TITLE
+
+# 제목에서 공백을 대시로 변환
+SAFE_TITLE="${TITLE// /-}"
+
+# 디렉토리 생성
+mkdir -p "$POSTS_DIR/$SAFE_TITLE"
+
 # 파일명 생성 (공백은 대시로 변환)
-FILENAME="$CURRENT_DATE-${TITLE// /-}.md"
+FILENAME="$CURRENT_DATE-$SAFE_TITLE.md"
 
 # 카테고리 입력받기
 read -p "카테고리를 입력하세요 (쉼표로 구분): " CATEGORIES
@@ -20,7 +25,7 @@ read -p "카테고리를 입력하세요 (쉼표로 구분): " CATEGORIES
 read -p "태그를 입력하세요 (쉼표로 구분): " TAGS
 
 # 포스트 파일 생성
-cat << EOF > "$POSTS_DIR/$TITLE/$FILENAME"
+cat << EOF > "$POSTS_DIR/$SAFE_TITLE/$FILENAME"
 ---
 layout: post
 title: "$TITLE"
@@ -33,4 +38,4 @@ tags: [$TAGS]
 
 EOF
 
-echo "새 포스트가 생성되었습니다: $POSTS_DIR/$FILENAME"
+echo "새 포스트가 생성되었습니다: $POSTS_DIR/$SAFE_TITLE/$FILENAME"

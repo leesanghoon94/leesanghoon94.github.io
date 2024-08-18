@@ -1,15 +1,22 @@
 ---
 layout: post
-title: "k8s"
+title: "kubeapiserver timeout"
 date: 2024-06-30 05:07:15 +0900
 categories: [k8s]
 tags: [k8s]
 ---
 
-E0629 20:08:07.418621   13891 memcache.go:265] couldn't get current server API group list: Get "https://172.30.1.2:644333/api?timeout=32s": dial tcp: address 644333: invalid port
+kubectl은 쿠버네티스 api와 통신한다.  
+kube/config를 사용해서
+crictl ps 로 kubeapiserver가 정상적으로 작동하고 있었고 주소가 644333이여서 통신을 못하고 있었던것
+
+[E0629 20:08:07.418621 13891 memcache.go:265] couldn't get current server API group list: Get "https://172.30.1.2:644333/api?timeout=32s": dial tcp: address 644333: invalid port
+
+> 잘못된 포트번호
+
 Unable to connect to the server: dial tcp: address 644333: invalid port,
- kubectl typically communicates with the Kubernetes API server using the configuration specified in the .kube/config file. kubectl은 전형적으로 쿠버네티스 api와 통신한다 .kube/config를 사용해서 
-crictl ps 로 kubeapiserver가 정상적으로 작동하고 있었고 주소가 33이 더붙어서 통신을 못하고 있었던것
+kubectl typically communicates with the Kubernetes API server using the configuration specified in the .kube/config file.
+
 Configuration file: By default, kubectl looks for a file named config in the $HOME/.kube directory. This file contains information about clusters, users, and contexts.
 API server communication: The config file specifies the API server's address, authentication method, and other details needed for kubectl to communicate with the Kubernetes cluster.
 Contexts: The config file can contain multiple contexts, each representing a different cluster or user. You can switch between these contexts using kubectl commands.
