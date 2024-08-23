@@ -9,8 +9,9 @@ CURRENT_DATE=$(date +"%Y-%m-%d")
 # 사용자로부터 포스트 제목 입력받기
 read -p "포스트 제목을 입력하세요: " TITLE
 
-# 제목에서 공백을 대시로 변환
+# 제목에서 공백을 대시로 변환하고 슬래시를 대시로 대체
 SAFE_TITLE="${TITLE// /-}"
+SAFE_TITLE="${SAFE_TITLE//\//-}"
 
 # 디렉토리 생성
 mkdir -p "$POSTS_DIR/$SAFE_TITLE"
