@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 도커컨테이너 로컬DB 연결
-date:
-categories: [Blogging]
+date:date: 2024-03-14 15:46:12 +0900
+categories: [mysql]
 tags:
 ---
 
