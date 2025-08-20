@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vscode으로 dropdown suggestions tap으로 선택하기"
+title: "vscode dropdown suggestions tap으로 선택하기"
 date: 2025-08-20 17:57:49 +0900
 categories: [vscode]
 tags: []
